@@ -9,17 +9,18 @@
         "vocab_path" : "workspace/dataset/vocab_w2i.json",
         "log_file" : "workspace/Conformer/logs/conformer.log",
         "reload" : false,
-        "max_grad_norm" : 200
+        "max_grad_norm" : 200,
+        "result" : "workspace/Conformer/result.txt"
     },
     "optim" : {
         "type" : "adam",
-        "lr" : 0.001,
+        "lr" : 0.0005,
         "weight_decay" : 0.0001,
         "decay_rate" : 0.5
     },
     "scheduler" : {
-        "lr_init" : 0.001,
-        "warmup_steps" : 10000
+        "lr_init" : 0.0005,
+        "warmup_steps" : 25000
     },
     "rnnt_loss" : {
         "blank" : 0, 
@@ -29,9 +30,9 @@
     "encoder_params" : {
         "n_layers" : 6, 
         "d_model" : 144,
-        "dim_expand" : 144,
+        "dim_expand" : 512,
         "ff_ratio" : 4,
-        "num_heads" : 4,
+        "num_heads" : 6,
         "kernel_size" : 31,
         "p_dropout" : 0.1,
         "conv_stride" : 1,
@@ -45,6 +46,13 @@
             "kernel_size" : 3,
             "norm" : "batch",
             "act" : "relu"
+        },
+        "spec_augment" : {
+            "spec_augment" : true,
+            "mF" : 2,
+            "F" : 27,
+            "mT" : 10,
+            "pS" : 0.05
         }
     },
 

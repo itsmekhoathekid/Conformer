@@ -45,6 +45,13 @@
             "kernel_size" : 3,
             "norm" : "batch",
             "act" : "relu"
+        },
+        "spec_augment" : {
+            "spec_augment" : true,
+            "mF" : 2,
+            "F" : 27,
+            "mT" : 10,
+            "pS" : 0.05
         }
     },
 

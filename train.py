@@ -94,7 +94,7 @@ def evaluate(model, dataloader, criterion, device):
             text_len = batch["text_len"].to(device)
             decoder_input = batch["decoder_input"].to(device)
 
-            output, fbank_len = model(speech, fbank_len.long(), decoder_input.int(), text_len.long())
+            output, fbank_len = model(speech, fbank_len.long(), decoder_input.int(), text_len.long(), training = False)
             loss = criterion(output, target_text, fbank_len, text_len)
 
             total_loss += loss.item()
@@ -182,7 +182,7 @@ def main():
         # Save model checkpoint
         model_filename = os.path.join(
             training_cfg['save_path'],
-            f"{config['model']['name']}_epoch_{epoch}"
+            f"{config['model_name']}_epoch_{epoch}"
         )
 
         torch.save({

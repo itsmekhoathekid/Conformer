@@ -238,12 +238,10 @@ class Conv2dSubsampling(nn.Module):
             if x_len is not None:
                 x_len = torch.div(x_len - 1, 2, rounding_mode='floor') + 1
 
-        # # (B, C, D // S, T // S) -> (B,  C * D // S, T // S)
-        # batch_size, channels, subsampled_dim, subsampled_length = x.size()
-        x = x.transpose(1, 2).contiguous()
-        x = x.reshape(x.shape[0], x.shape[1], -1) 
-        x = x.transpose(1, 2)  # (B, T // S, C * D // S)
-
+        batch_size, channels, subsampled_dim, subsampled_length = x.size()
+        x = x.permute(0, 2, 1, 3)  # (B, D, C, T)
+        x = x.reshape(batch_size, subsampled_dim, channels *subsampled_length)
+        x = x.transpose(1, 2)  # (B, T, D * C)
         return x, x_len
 
 def get_mask_from_lens(lengths, max_len: int):

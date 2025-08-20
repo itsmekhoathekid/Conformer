@@ -47,8 +47,8 @@ class ConformerTransducer(nn.Module):
         self.eos = config["vocab"]["eos"]
         self.blank = config["vocab"]["blank"]
 
-    def forward(self, inputs, inputs_length, targets, targets_length):
-        enc_state, fbank_len = self.encoder(inputs, inputs_length)
+    def forward(self, inputs, inputs_length, targets, targets_length, training = True):
+        enc_state, fbank_len = self.encoder(inputs, inputs_length, training)
         dec_state, _ = self.decoder(targets, targets_length)
         joint_outputs = self.joint(enc_state, dec_state)
         return joint_outputs, fbank_len
@@ -56,17 +56,21 @@ class ConformerTransducer(nn.Module):
     def recognize(self, inputs, inputs_length):
         batch_size = inputs.size(0)
 
-        enc_states, _ = self.encoder(inputs, inputs_length)
+        enc_states, inputs_length = self.encoder(inputs, inputs_length)
         zero_token = torch.LongTensor([[self.sos]]) 
 
+        
+        if inputs.is_cuda:
+            zero_token = zero_token.cuda()
         def decode(enc_state, lengths):
             token_list = []
             dec_state, hidden = self.decoder(zero_token)
-
             for t in range(lengths):
-                logits = self.joint(enc_state[t].view(-1), dec_state.view(-1))
-                out = F.softmax(logits, dim=0).detach()
-                pred = torch.argmax(out, dim=0).item()
+                enc_step = enc_states[:, t, :]
+                dec_proj = dec_state[:, -1, :]
+                logits = self.joint(enc_step, dec_proj)
+                logits = F.softmax(logits.squeeze(1).squeeze(1), dim=-1) 
+                pred = torch.argmax(logits, dim=-1).item()
 
                 if pred == self.eos: # eos
                     break

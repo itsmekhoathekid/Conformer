@@ -44,6 +44,59 @@ class Vocab:
         return len(self.vocab)
 
 
+class AudioPreprocessing(nn.Module):
+
+    """Audio Preprocessing
+
+    Computes mel-scale log filter banks spectrogram
+
+    Args:
+        sample_rate: Audio sample rate
+        n_fft: FFT frame size, creates n_fft // 2 + 1 frequency bins.
+        win_length_ms: FFT window length in ms, must be <= n_fft
+        hop_length_ms: length of hop between FFT windows in ms
+        n_mels: number of mel filter banks
+        normalize: whether to normalize mel spectrograms outputs
+        mean: training mean
+        std: training std
+
+    Shape:
+        Input: (batch_size, audio_len)
+        Output: (batch_size, n_mels, audio_len // hop_length + 1)
+    
+    """
+
+    def __init__(self, sample_rate, n_fft, win_length_ms, hop_length_ms, n_mels, normalize, mean, std):
+        super(AudioPreprocessing, self).__init__()
+        self.win_length = int(sample_rate * win_length_ms) // 1000
+        self.hop_length = int(sample_rate * hop_length_ms) // 1000
+        self.Spectrogram = torchaudio.transforms.Spectrogram(n_fft, self.win_length, self.hop_length)
+        self.MelScale = torchaudio.transforms.MelScale(n_mels, sample_rate, f_min=0, f_max=8000, n_stft=n_fft // 2 + 1)
+        self.normalize = normalize
+        self.mean = mean
+        self.std = std
+
+    def forward(self, x, x_len):
+
+        # Short Time Fourier Transform (B, T) -> (B, n_fft // 2 + 1, T // hop_length + 1)
+        x = self.Spectrogram(x)
+
+        # Mel Scale (B, n_fft // 2 + 1, T // hop_length + 1) -> (B, n_mels, T // hop_length + 1)
+        x = self.MelScale(x)
+        
+        # Energy log, autocast disabled to prevent float16 overflow
+        x = (x.float() + 1e-9).log().type(x.dtype)
+
+        # Compute Sequence lengths 
+        if x_len is not None:
+            x_len = torch.div(x_len, self.hop_length, rounding_mode='floor') + 1
+
+        # Normalize
+        if self.normalize:
+            x = (x - self.mean) / self.std
+
+        return x, x_len
+
 
 
 
@@ -70,20 +123,8 @@ class Speech2Text(Dataset):
 
     def get_fbank(self, waveform, sample_rate=16000):
 
-        # mel_extractor = T.MelSpectrogram(
-        #     sample_rate=sample_rate,
-        #     n_fft=512,
-        #     win_length=int(0.025 * sample_rate),
-        #     hop_length=int(0.010 * sample_rate),
-        #     n_mels=80,  
-        #     power=2.0
-        # )
-
-        # log_mel = mel_extractor(waveform.unsqueeze(0))
-        # log_mel = torchaudio.functional.amplitude_to_DB(log_mel, multiplier=10.0, amin=1e-10, db_multiplier=0)
-
-        # return log_mel.squeeze(0).transpose(0, 1)  # [T, 80]
         fbank = self.fbank(waveform)
+        
         return fbank.squeeze(0)  # [T, 80]
 
     def extract_from_path(self, wave_path):
