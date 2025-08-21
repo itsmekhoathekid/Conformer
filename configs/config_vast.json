@@ -14,12 +14,12 @@
     },
     "optim" : {
         "type" : "adam",
-        "lr" : 0.0005,
+        "lr" : 0.0008,
         "weight_decay" : 0.0001,
         "decay_rate" : 0.5
     },
     "scheduler" : {
-        "lr_init" : 0.0005,
+        "lr_init" : 0.0008,
         "warmup_steps" : 25000
     },
     "rnnt_loss" : {
@@ -28,25 +28,31 @@
     },
     "model_name" : "Conformer_Transducer",
     "encoder_params" : {
-        "n_layers" : 6, 
+        "n_layers" : 3, 
         "d_model" : 144,
         "dim_expand" : 144,
         "ff_ratio" : 4,
         "num_heads" : 4,
-        "kernel_size" : 31,
+        "kernel_size" : 32,
         "p_dropout" : 0.1,
         "conv_stride" : 1,
         "att_stride" : 1,
         "padding" :  "causal",
-        "in_features" : 7200,
+        "in_features" : 1600,
         "output_size" : 320,
+        "conv_type" : 1,
         "conv_subsampling" : {
             "num_layers" : 2,
-            "filters" : [144, 144],
+            "filters" : [64, 32],
             "kernel_size" : 3,
             "norm" : "batch",
             "act" : "swish"
         },
+        "conv_subsampling_2" : {
+
+        },
+        "attention_type" : "mha",
+
         "spec_augment" : {
             "spec_augment" : true,
             "mF" : 2,
@@ -63,7 +69,7 @@
             "hidden_size" : 512,
             "vocab_size" : 4866,
             "output_size" : 320,
-            "n_layers" : 2,
+            "n_layers" : 1,
             "dropout" : 0.1
         }
     },

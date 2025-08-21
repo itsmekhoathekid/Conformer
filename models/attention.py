@@ -346,21 +346,80 @@ class RelPosMultiHeadSelfAttention(MultiHeadAttention):
 
         return O, att_w.detach(), hidden
 
+
+class MultiHeadAttentionBlock(nn.Module):
+
+    def __init__(self, d_model: int, h: int, dropout: float) -> None:
+        super().__init__()
+        self.d_model = d_model # Embedding vector size
+        self.h = h # Number of heads
+        assert d_model % h == 0, "d_model is not divisible by h"
+
+        self.d_k = d_model // h # Dimension of vector seen by each head
+        self.w_q = nn.Linear(d_model, d_model, bias=False) # Wq
+        self.w_k = nn.Linear(d_model, d_model, bias=False) # Wk
+        self.w_v = nn.Linear(d_model, d_model, bias=False) # Wv
+        self.w_o = nn.Linear(d_model, d_model, bias=False) # Wo
+        self.dropout = nn.Dropout(dropout)
+
+    @staticmethod
+    def attention(query, key, value, mask, dropout: nn.Dropout):
+        d_k = query.shape[-1]
+        # Just apply the formula from the paper
+        # (batch, h, seq_len, d_k) --> (batch, h, seq_len, seq_len)
+        attention_scores = (query @ key.transpose(-2, -1)) / math.sqrt(d_k)
+        if mask is not None:
+            # print("Mask shape:", mask.shape)  # [B, T]
+            # print("attention_scores shape:", attention_scores.shape)  # [B, h, T    , T]
+            if mask.dim() == 2:
+                mask = mask.unsqueeze(1).unsqueeze(1)
+            attention_scores.masked_fill_(mask == 0, -1e9)
+        attention_scores = attention_scores.softmax(dim=-1) # (batch, h, seq_len, seq_len) # Apply softmax
+        if dropout is not None:
+            attention_scores = dropout(attention_scores)
+        # (batch, h, seq_len, seq_len) --> (batch, h, seq_len, d_k)
+        return (attention_scores @ value), attention_scores
+
+    def forward(self, q, k, v, mask):
+        query = self.w_q(q) # (batch, seq_len, d_model) --> (batch, seq_len, d_model)
+        key = self.w_k(k) # (batch, seq_len, d_model) --> (batch, seq_len, d_model)
+        value = self.w_v(v) # (batch, seq_len, d_model) --> (batch, seq_len, d_model)
+
+        # (batch, seq_len, d_model) --> (batch, seq_len, h, d_k) --> (batch, h, seq_len, d_k)
+        query = query.view(query.shape[0], query.shape[1], self.h, self.d_k).transpose(1, 2)
+        key = key.view(key.shape[0], key.shape[1], self.h, self.d_k).transpose(1, 2)
+        value = value.view(value.shape[0], value.shape[1], self.h, self.d_k).transpose(1, 2)
+
+        # Calculate attention
+        x, self.attention_scores = MultiHeadAttentionBlock.attention(query, key, value, mask, self.dropout)
+        
+        # Combine all the heads together
+        # (batch, h, seq_len, d_k) --> (batch, seq_len, h, d_k) --> (batch, seq_len, d_model)
+        x = x.transpose(1, 2).contiguous().view(x.shape[0], -1, self.h * self.d_k)
+
+        # Multiply by Wo
+        # (batch, seq_len, d_model) --> (batch, seq_len, d_model)  
+        att_w = None
+        _ = None
+        return self.w_o(x), att_w, _
+
 class MultiHeadSelfAttentionModule(nn.Module):
-    def __init__(self, num_heads, dim_model, dropout=0.1, max_pos_encoding=512,):
+    def __init__(self, num_heads, dim_model, dropout=0.1, max_pos_encoding=512, attention_type = 'mha'):
         super(MultiHeadSelfAttentionModule, self).__init__()
         self.num_heads = num_heads
         self.dim_model = dim_model
         self.dropout = dropout
 
         # Multi-Head Attention Layer
-        self.mha = RelPosMultiHeadSelfAttention(dim_model, num_heads, causal=True, max_pos_encoding=max_pos_encoding)
-
+        if attention_type == 'mha':
+            self.mha = MultiHeadAttentionBlock(dim_model, num_heads, dropout = dropout)
+        else:
+            self.mha = RelPosMultiHeadSelfAttention(dim_model, num_heads, causal=True, max_pos_encoding=max_pos_encoding)
         self.layer_norm = nn.LayerNorm(dim_model, eps=1e-6)
         self.dropout_layer = nn.Dropout(dropout)
     def forward(self, x, mask=None, hidden=None): 
         x = self.layer_norm(x)
-        x, att_w, hidden = self.mha(x, x, x, mask=mask, hidden=hidden)
+        x, att_w, hidden = self.mha(x, x, x, mask=mask)
         x = self.dropout_layer(x)
         return x, att_w, hidden
 

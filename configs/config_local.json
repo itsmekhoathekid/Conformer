@@ -32,20 +32,26 @@
         "dim_expand" : 144,
         "ff_ratio" : 4,
         "num_heads" : 4,
-        "kernel_size" : 31,
+        "kernel_size" : 32,
         "p_dropout" : 0.1,
         "conv_stride" : 1,
         "att_stride" : 1,
         "padding" :  "causal",
-        "in_features" : 7200,
+        "in_features" : 1600,
         "output_size" : 320,
+        "conv_type" : 1,
         "conv_subsampling" : {
             "num_layers" : 2,
-            "filters" : [144, 144],
+            "filters" : [64, 32],
             "kernel_size" : 3,
             "norm" : "batch",
             "act" : "swish"
         },
+        "conv_subsampling_2" : {
+
+        },
+        "attention_type" : "mha",
+
         "spec_augment" : {
             "spec_augment" : true,
             "mF" : 2,
