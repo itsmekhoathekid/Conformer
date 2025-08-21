@@ -8,7 +8,7 @@
         "test_path" : "workspace/dataset/test_w2i.json",
         "vocab_path" : "workspace/dataset/vocab_w2i.json",
         "log_file" : "workspace/Conformer/logs/conformer.log",
-        "reload" : false,
+        "reload" : true,
         "max_grad_norm" : 200,
         "result" : "workspace/Conformer/result.txt"
     },
@@ -28,9 +28,9 @@
     },
     "model_name" : "Conformer_Transducer",
     "encoder_params" : {
-        "n_layers" : 6, 
+        "n_layers" : 10, 
         "d_model" : 144,
-        "dim_expand" : 512,
+        "dim_expand" : 144,
         "ff_ratio" : 4,
         "num_heads" : 6,
         "kernel_size" : 31,

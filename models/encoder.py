@@ -57,16 +57,16 @@ class ConformerBlock(nn.Module):
         self.ffn_1 = FeedForwardBlock(dim_model, dim_model * ff_ratio,  Pdrop, act = 'swish')
         self.ffn_2 = FeedForwardBlock(dim_expand, dim_expand * ff_ratio, Pdrop, act = 'swish')
         self.multihead_attention = MultiHeadSelfAttentionModule(num_heads, dim_model, Pdrop, max_pos_encoding = 5000)
-        self.conv_residual = ConvolutionResidual(dim_model, dim_expand, kernel_size, conv_stride)
+        # self.conv_residual = ConvolutionResidual(dim_model, dim_expand, kernel_size, conv_stride)
         self.norm = nn.LayerNorm(dim_expand, eps=1e-6)
-        self.atten_residual = AttentionResidual(att_stride)
+        # self.atten_residual = AttentionResidual(att_stride)
         self.stride = conv_stride * att_stride
 
     def forward(self, x, mask=None, hidden=None):
         x = x + 1/2 * self.ffn_1(x)
         x_att, attention, _ = self.multihead_attention(x, mask, hidden)
-        x = self.atten_residual(x_att) + x_att
-        x  = self.conv_residual(x) + self.conv_module(x)
+        x = x  + x_att
+        x  = x + self.conv_module(x)
         x = x + 1/2 * self.ffn_2(x)
         x = self.norm(x)
         return x, attention, hidden
@@ -125,13 +125,12 @@ class ConformerEncoder(nn.Module):
 
         # print(x_len.shape)
         # print(x.size(2))
-        mask = get_mask_from_lens(x_len, x.size(2)).to(x.device)
+        mask = get_mask_from_lens(x_len, x.size(1)).to(x.device)
         
-        x = x.transpose(1, 2)
+        
         x = self.linear(x)
         x = self.dropout(x)
         x = self.pe(x)
-        # print(x.shape)
 
         for layer in self.layers:
             x, attention, _ = layer(x, mask)

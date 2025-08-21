@@ -167,7 +167,7 @@ def main():
     start_epoch = 1
     if training_cfg['reload']:
         checkpoint_path = training_cfg['save_path']
-        start_epoch, model, optimizer = reload_model(model, optimizer, checkpoint_path, config['model']['name'])
+        start_epoch, model, optimizer = reload_model(model, optimizer, checkpoint_path, config['model_name'])
         scheduler.load(os.path.join(training_cfg['save_path'], 'scheduler.ckpt'))
 
     # ==== Training loop ====

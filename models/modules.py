@@ -146,7 +146,8 @@ class FeedForwardBlock(nn.Module):
         )
 
     def forward(self, x):
-        return self.layers(x)
+        residual = x 
+        return self.layers(x) + residual
 
 
 class ConvolutionResidual(nn.Module):
@@ -241,7 +242,7 @@ class Conv2dSubsampling(nn.Module):
         batch_size, channels, subsampled_dim, subsampled_length = x.size()
         x = x.permute(0, 2, 1, 3)  # (B, D, C, T)
         x = x.reshape(batch_size, subsampled_dim, channels *subsampled_length)
-        x = x.transpose(1, 2)  # (B, T, D * C)
+
         return x, x_len
 
 def get_mask_from_lens(lengths, max_len: int):
