@@ -8,18 +8,18 @@
         "test_path" : "workspace/dataset/test_w2i.json",
         "vocab_path" : "workspace/dataset/vocab_w2i.json",
         "log_file" : "workspace/Conformer/logs/conformer.log",
-        "reload" : true,
+        "reload" : false,
         "max_grad_norm" : 200,
         "result" : "workspace/Conformer/result.txt"
     },
     "optim" : {
         "type" : "adam",
-        "lr" : 0.0005,
+        "lr" : 0.0008,
         "weight_decay" : 0.0001,
         "decay_rate" : 0.5
     },
     "scheduler" : {
-        "lr_init" : 0.0005,
+        "lr_init" : 0.0008,
         "warmup_steps" : 25000
     },
     "rnnt_loss" : {
@@ -28,17 +28,17 @@
     },
     "model_name" : "Conformer_Transducer",
     "encoder_params" : {
-        "n_layers" : 10, 
-        "d_model" : 144,
-        "dim_expand" : 144,
+        "n_layers" : 6, 
+        "d_model" : 512,
+        "dim_expand" : 512,
         "ff_ratio" : 4,
-        "num_heads" : 6,
+        "num_heads" : 4,
         "kernel_size" : 31,
         "p_dropout" : 0.1,
         "conv_stride" : 1,
         "att_stride" : 1,
         "padding" :  "causal",
-        "in_features" : 2880,
+        "in_features" : 7200,
         "output_size" : 320,
         "conv_subsampling" : {
             "num_layers" : 2,
