@@ -359,11 +359,9 @@ class MultiHeadSelfAttentionModule(nn.Module):
         self.layer_norm = nn.LayerNorm(dim_model, eps=1e-6)
         self.dropout_layer = nn.Dropout(dropout)
     def forward(self, x, mask=None, hidden=None): 
-        residual = x 
         x = self.layer_norm(x)
         x, att_w, hidden = self.mha(x, x, x, mask=mask, hidden=hidden)
         x = self.dropout_layer(x)
-        x = x + residual
         return x, att_w, hidden
 
 # https://github.com/kimiyoung/transformer-xl/blob/44781ed21dbaec88b280f74d9ae2877f52b492a5/pytorch/mem_transformer.py

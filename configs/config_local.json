@@ -37,7 +37,7 @@
         "conv_stride" : 1,
         "att_stride" : 1,
         "padding" :  "causal",
-        "in_features" : 7200,
+        "in_features" : 2880,
         "output_size" : 320,
         "conv_subsampling" : {
             "num_layers" : 2,

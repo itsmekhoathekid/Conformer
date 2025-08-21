@@ -146,8 +146,7 @@ class FeedForwardBlock(nn.Module):
         )
 
     def forward(self, x):
-        residual = x 
-        return self.layers(x) + residual
+        return self.layers(x) 
 
 
 class ConvolutionResidual(nn.Module):

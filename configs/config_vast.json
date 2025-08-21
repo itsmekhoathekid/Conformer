@@ -14,12 +14,12 @@
     },
     "optim" : {
         "type" : "adam",
-        "lr" : 0.0008,
+        "lr" : 0.0005,
         "weight_decay" : 0.0001,
         "decay_rate" : 0.5
     },
     "scheduler" : {
-        "lr_init" : 0.0008,
+        "lr_init" : 0.0005,
         "warmup_steps" : 25000
     },
     "rnnt_loss" : {
@@ -38,7 +38,7 @@
         "conv_stride" : 1,
         "att_stride" : 1,
         "padding" :  "causal",
-        "in_features" : 7200,
+        "in_features" : 2880,
         "output_size" : 320,
         "conv_subsampling" : {
             "num_layers" : 2,
