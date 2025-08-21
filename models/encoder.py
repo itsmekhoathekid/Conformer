@@ -58,7 +58,7 @@ class ConformerBlock(nn.Module):
         self.ffn_1 = FeedForwardBlock(dim_model, dim_model * ff_ratio,  Pdrop, act = 'swish')
         self.ffn_2 = FeedForwardBlock(dim_expand, dim_expand * ff_ratio, Pdrop, act = 'swish')
         self.multihead_attention = MultiHeadSelfAttentionModule(num_heads, dim_model, Pdrop, max_pos_encoding = 5000, attention_type=attention_type)
-        # self.conv_residual = ConvolutionResidual(dim_model, dim_expand, kernel_size, conv_stride)
+        self.conv_residual = ConvolutionResidual(dim_model, dim_expand, kernel_size, conv_stride)
         self.norm = nn.LayerNorm(dim_expand, eps=1e-6)
         # self.atten_residual = AttentionResidual(att_stride)
         self.stride = conv_stride * att_stride
@@ -67,6 +67,7 @@ class ConformerBlock(nn.Module):
         x = x + 1/2 * self.ffn_1(x)
         x_att, attention, _ = self.multihead_attention(x, mask, hidden)
         x = x  + x_att
+        
         x  = x + self.conv_module(x)
         x = x + 1/2 * self.ffn_2(x)
         x = self.norm(x)

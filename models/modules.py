@@ -4,76 +4,70 @@ import torch.nn as nn
 import math
 
 class Swish(nn.Module):
+    def __init__(self):
+        super(Swish, self).__init__()
     """Swish activation function."""
     def forward(self, x):
         return x * torch.sigmoid(x)
 
 class ConvolutionModule(nn.Module):
-
-    """Conformer Convolution Module
-
-    Args:
-        dim_model: input feature dimension
-        dim_expand: output feature dimension
-        kernel_size: 1D depthwise convolution kernel size
-        Pdrop: residual dropout probability
-        stride: 1D depthwise convolution stride
-        padding: "valid", "same" or "causal"
-
-    Input: (batch size, input length, dim_model)
-    Output: (batch size, output length, dim_expand)
-    
-    """
-
     def __init__(self, dim_model, dim_expand, kernel_size, Pdrop, stride, padding):
-        super(ConvolutionModule, self).__init__()
-
-
+        super().__init__()
         self.layer_norm = nn.LayerNorm(dim_model, eps=1e-6)
-        self.conv1d = nn.Conv1d(
-            in_channels=dim_model,
-            out_channels=dim_expand * 2,
-            kernel_size=1,
-        )
-
+        self.conv1d = nn.Conv1d(dim_model, dim_expand * 2, kernel_size=1)
         self.glu = nn.GLU(dim=1)
+
+        self.padding = padding
+        self.kernel_size = kernel_size
+        self.stride = stride
+
+        # Decide how to handle padding for the depthwise conv
+        if padding == 'same':
+            # works properly for stride=1
+            dw_padding = (kernel_size - 1) // 2
+            self.pre_pad = None
+        elif padding == 'causal':
+            # causal: pad only on the left
+            dw_padding = 0
+            self.pre_pad = nn.ConstantPad1d((kernel_size - 1, 0), 0.0)
+        else:  # 'valid'
+            dw_padding = 0
+            self.pre_pad = None
+
         self.conv1d_depthwise = nn.Conv1d(
             in_channels=dim_expand,
             out_channels=dim_expand,
             kernel_size=kernel_size,
             stride=stride,
-            padding=0,
+            padding=dw_padding,       # <— key change
             groups=dim_expand
         )
 
         self.bn = nn.BatchNorm1d(dim_expand)
         self.swish = Swish()
-        self.conv1d_2 = nn.Conv1d(
-            in_channels=dim_expand,
-            out_channels=dim_expand,
-            kernel_size=1,
-        )
+        self.conv1d_2 = nn.Conv1d(dim_expand, dim_expand, kernel_size=1)
         self.dropout = nn.Dropout(Pdrop)
-        self.padding = padding
-        if self.padding == 'causal':
-            self.pre_padding = nn.ConstantPad1d(padding=(kernel_size - 1, 0), value=0)
-
 
     def forward(self, x):
+        # x: (B, T, D)
         x = self.layer_norm(x)
-        x = x.transpose(1, 2)  # (batch size, dim_model, input length)
-        if self.padding == 'causal':
-            x = self.pre_padding(x)
-        x = self.conv1d(x)
-        x = self.glu(x)  # (batch size, dim_expand, input length
-        x = self.conv1d_depthwise(x)
+        x = x.transpose(1, 2)  # (B, D, T)
+
+        x = self.conv1d(x)     # (B, 2*E, T)
+        x = self.glu(x)        # (B, E, T)
+
+        # Apply padding *before* depthwise conv if needed
+        if self.pre_pad is not None:
+            x = self.pre_pad(x)  # causal left-pad
+        x = self.conv1d_depthwise(x)  # (B, E, T')  — T' now matches for 'same', or grows with causal pad
+
         x = self.bn(x)
         x = self.swish(x)
         x = self.conv1d_2(x)
-        x = x.transpose(1, 2)  # (batch size, input length
+        x = x.transpose(1, 2)  # (B, T', E)
         x = self.dropout(x)
+        return x
 
-        return x 
 
 class PositionalEncoding(nn.Module):
 
