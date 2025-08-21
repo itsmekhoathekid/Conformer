@@ -109,7 +109,7 @@ class ConformerEncoder(nn.Module):
         ])
         self.linear = nn.Linear(config['in_features'], self.d_model)
         self.dropout = nn.Dropout(self.p_dropout)
-        self.pe = PositionalEncoding(d_model=self.d_model)
+        # self.pe = PositionalEncoding(d_model=self.d_model)
         self.projected = nn.Linear(self.d_model, config['output_size'])
         self.spec_augment = SpecAugment(
             spec_augment=config['spec_augment']['spec_augment'],
@@ -130,7 +130,7 @@ class ConformerEncoder(nn.Module):
         
         x = self.linear(x)
         x = self.dropout(x)
-        x = self.pe(x)
+        # x = self.pe(x)
 
         for layer in self.layers:
             x, attention, _ = layer(x, mask)
