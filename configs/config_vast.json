@@ -1,7 +1,7 @@
 {
     "training" : {
         "epochs" : 100,
-        "batch_size" : 2,
+        "batch_size" : 4,
         "save_path" : "workspace/Conformer/saves",
         "train_path" : "workspace/dataset/train_w2i.json",
         "dev_path" : "workspace/dataset/test_w2i.json",
@@ -29,8 +29,8 @@
     "model_name" : "Conformer_Transducer",
     "encoder_params" : {
         "n_layers" : 6, 
-        "d_model" : 512,
-        "dim_expand" : 512,
+        "d_model" : 144,
+        "dim_expand" : 144,
         "ff_ratio" : 4,
         "num_heads" : 4,
         "kernel_size" : 31,
@@ -38,14 +38,14 @@
         "conv_stride" : 1,
         "att_stride" : 1,
         "padding" :  "causal",
-        "in_features" : 2880,
+        "in_features" : 7200,
         "output_size" : 320,
         "conv_subsampling" : {
             "num_layers" : 2,
             "filters" : [144, 144],
             "kernel_size" : 3,
             "norm" : "batch",
-            "act" : "relu"
+            "act" : "swish"
         },
         "spec_augment" : {
             "spec_augment" : true,

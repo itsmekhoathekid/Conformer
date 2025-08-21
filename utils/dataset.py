@@ -141,13 +141,36 @@ class Speech2Text(Dataset):
         sig  = sb.dataio.dataio.read_audio(wave_path)
         return self.get_fbank(sig.unsqueeze(0))
 
+    def extract_features(self, wav_file, sr=16000):
+        y, sr = librosa.load(wav_file, sr=sr)
+        win_length = int(0.025 * sr)   # 25 ms
+        hop_length = int(0.010 * sr)   # 10 ms
+        # n_fft = next power of 2 >= win_length
+        n_fft = 1
+        while n_fft < win_length:
+            n_fft *= 2
+
+        S = librosa.feature.melspectrogram(
+            y=y, sr=sr, n_mels=40, n_fft=n_fft,
+            win_length=win_length, hop_length=hop_length,
+            window='hann', power=2.0, center=True
+        )
+        # log-mel (dB)
+        x = librosa.power_to_db(S, ref=np.max).T   # (T, 40)
+        
+        mu = x.mean(axis=0, keepdims=True)
+        sg = x.std(axis=0, keepdims=True) + 1e-8
+        x = (x - mu) / sg
+        x = stack_context(x, left=3, right=1) 
+        return torch.tensor(subsample(x, 10, 30))
+
     def __getitem__(self, idx):
         current_item = self.data[idx]
         wav_path = current_item["wav_path"]
         encoded_text = torch.tensor(current_item["encoded_text"] + [self.eos_token], dtype=torch.long)
         decoder_input = torch.tensor([self.sos_token] + current_item["encoded_text"] + [self.pad_token], dtype=torch.long)
         tokens = torch.tensor(current_item["encoded_text"], dtype=torch.long)
-        fbank = self.extract_from_path(wav_path).float()  # [T, 512]
+        fbank = self.extract_features(wav_path).float()  # [T, 512]
 
         return {
             "text": encoded_text,
