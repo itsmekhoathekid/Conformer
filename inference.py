@@ -80,7 +80,7 @@ def main():
                 fout.write(f"Ground truth: {true_text}\n")
                 fout.write("---------------\n")
 
-    print(f"Inference complete. Results saved to {full_cfg["training"]["result"]}")
+    print(f"Inference complete. Results saved to {full_cfg['training']['result']}")
 
     #===TÍNH WER VÀ CER===
     overall_wer = wer(true_texts, pred_texts)

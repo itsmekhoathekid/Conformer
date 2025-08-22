@@ -38,7 +38,7 @@
         "conv_stride" : 1,
         "att_stride" : 1,
         "padding" :  "same",
-        "in_features" : 1600,
+        "in_features" : 640,
         "output_size" : 320,
         "conv_type" : 2,
         "conv_subsampling" : {
@@ -75,8 +75,8 @@
     },
 
     "joint" : {
-        "type" : "sum",
-        "input_size" : 320,
+        "type" : "concat",
+        "input_size" : 640,
         "inner_size" : 512,
         "vocab_size" : 4866
     },
