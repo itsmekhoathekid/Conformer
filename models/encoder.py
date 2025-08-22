@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from .modules import ConvolutionModule, FeedForwardBlock, ConvolutionResidual, AttentionResidual, Conv2dSubsampling, get_mask_from_lens,PositionalEncoding, ResidualConnection
+from .modules import ConvolutionModule, FeedForwardBlock, ConvolutionResidual, AttentionResidual, Conv2dSubsampling, get_mask_from_lens,PositionalEncoding, ResidualConnection, FeedForwardModule
 from .attention import MultiHeadSelfAttentionModule
 import torchaudio
 from typing import Optional, Callable, Type, List
@@ -55,8 +55,8 @@ class ConformerBlock(nn.Module):
     def __init__(self, dim_model, dim_expand, ff_ratio, num_heads, kernel_size, Pdrop, conv_stride, att_stride, padding, attention_type):
         super(ConformerBlock, self).__init__()
         self.conv_module = ConvolutionModule(dim_model, dim_expand, kernel_size, Pdrop, conv_stride, "causal" if padding == 'causal' else 'same')
-        self.ffn_1 = FeedForwardBlock(dim_model, dim_model * ff_ratio,  Pdrop, act = 'swish')
-        self.ffn_2 = FeedForwardBlock(dim_expand, dim_expand * ff_ratio, Pdrop, act = 'swish')
+        self.ffn_1 = FeedForwardModule(dim_model, dim_model * ff_ratio,  Pdrop)
+        self.ffn_2 = FeedForwardModule(dim_model, dim_model * ff_ratio,  Pdrop)
         self.multihead_attention = MultiHeadSelfAttentionModule(num_heads, dim_model, Pdrop, max_pos_encoding = 5000, attention_type=attention_type)
         self.conv_residual = ConvolutionResidual(dim_model, dim_expand, kernel_size, conv_stride)
         # self.norm1 = nn.LayerNorm(dim_model, eps=1e-6)
@@ -64,15 +64,19 @@ class ConformerBlock(nn.Module):
         # self.atten_residual = AttentionResidual(att_stride)
         self.stride = conv_stride * att_stride
         self.dropout = nn.Dropout(Pdrop)
+        self.residual_modules = nn.ModuleList([
+            ResidualConnection(dim_model, Pdrop, 0.5),
+            ResidualConnection(dim_expand, Pdrop, 1),
+            ResidualConnection(dim_model, Pdrop, 1),
+            ResidualConnection(dim_expand, Pdrop, 0.5)
+        ])
     def forward(self, x, mask=None, hidden=None):
-        x = x + 1/2 * self.ffn_1(x)
-        x_att, attention, _ = self.multihead_attention(x, mask, hidden)
-        x = x  + x_att
-        
-        x  = x + self.conv_module(x)
-        x = x + 1/2 * self.ffn_2(x)
+        x = self.residual_modules[0](x, lambda x: self.ffn_1(x))
+        x = self.residual_modules[1](x, lambda x: self.multihead_attention(x, mask, hidden))
+        x = self.residual_modules[2](x, lambda x: self.conv_residual(x))
+        x = self.residual_modules[3](x, lambda x: self.ffn_2(x))
         x = self.norm2(x)
-        return x, attention, hidden
+        return x
 
 def calc_data_len(
     result_len: int,
@@ -321,7 +325,7 @@ class ConformerEncoder(nn.Module):
         x = self.pe(x) if self.pe else x  # Apply positional encoding if needed
 
         for layer in self.layers:
-            x, attention, _ = layer(x, mask)
+            x = layer(x, mask)
         
         x = self.projected(x)
         return x, x_len 

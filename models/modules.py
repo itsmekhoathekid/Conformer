@@ -69,9 +69,9 @@ class ConvolutionModule(nn.Module):
             groups=dim_expand
         )
 
-        self.bn = nn.BatchNorm1d(dim_expand)
+        self.bn = nn.LayerNorm(dim_expand)
         self.swish = Swish()
-        self.conv1d_2 = nn.Conv1d(dim_expand, dim_expand, kernel_size=1)
+        self.conv1d_2 = nn.LayerNorm(dim_expand, dim_expand)
         self.dropout = nn.Dropout(Pdrop)
 
     def forward(self, x):
@@ -85,11 +85,11 @@ class ConvolutionModule(nn.Module):
 
 
         x = self.conv1d_depthwise(x)  # (B, E, T')  — T' now matches for 'same', or grows with causal pad
-
+        x = x.transpose(1, 2)
         x = self.bn(x)
         x = self.swish(x)
         x = self.conv1d_2(x)
-        x = x.transpose(1, 2)  # (B, T', E)
+          # (B, T', E)
         x = self.dropout(x)
         x = x + residual  # (B, T', E)
         return x
@@ -144,10 +144,11 @@ class LayerNormalization(nn.Module):
 
 class ResidualConnection(nn.Module):
     
-        def __init__(self, features: int, dropout: float) -> None:
+        def __init__(self, features: int, dropout: float, mutiplier) -> None:
             super().__init__()
             self.dropout = nn.Dropout(dropout)
             self.norm = LayerNormalization(features)
+            self.multiplier = mutiplier
 
         def forward(self, x, sublayer):
             return self.norm(x + self.dropout(sublayer(x)))
@@ -170,6 +171,17 @@ class FeedForwardBlock(nn.Module):
         x = self.layers(x) + residual
         return x
 
+class FeedForwardModule(nn.Module):
+
+    def __init__(self, d_model: int, d_ff: int, dropout: float) -> None:
+        super().__init__()
+        self.linear_1 = nn.Linear(d_model, d_ff) # w1 and b1
+        self.dropout = nn.Dropout(dropout)
+        self.linear_2 = nn.Linear(d_ff, d_model) # w2 and b2
+
+    def forward(self, x):
+        # (batch, seq_len, d_model) --> (batch, seq_len, d_ff) --> (batch, seq_len, d_model)
+        return self.linear_2(self.dropout(torch.relu(self.linear_1(x))))
 
 class ConvolutionResidual(nn.Module):
     def __init__(self, dim_model, dim_expand, kernel_size, stride):

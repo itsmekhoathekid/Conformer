@@ -344,7 +344,7 @@ class RelPosMultiHeadSelfAttention(MultiHeadAttention):
         # Output linear layer
         O = self.output_layer(O)
 
-        return O, att_w.detach(), hidden
+        return O
 
 
 class MultiHeadAttentionBlock(nn.Module):
@@ -401,7 +401,7 @@ class MultiHeadAttentionBlock(nn.Module):
         # (batch, seq_len, d_model) --> (batch, seq_len, d_model)  
         att_w = None
         _ = None
-        return self.w_o(x), att_w, _
+        return self.w_o(x)
 
 class MultiHeadSelfAttentionModule(nn.Module):
     def __init__(self, num_heads, dim_model, dropout=0.1, max_pos_encoding=512, attention_type = 'mha'):
@@ -418,12 +418,12 @@ class MultiHeadSelfAttentionModule(nn.Module):
         self.layer_norm = nn.LayerNorm(dim_model, eps=1e-6)
         self.dropout_layer = nn.Dropout(dropout)
     def forward(self, x, mask=None, hidden=None): 
-        residueal = x
+        # residueal = x
         x = self.layer_norm(x)
-        x, att_w, hidden = self.mha(x, x, x, mask=mask)
+        x = self.mha(x, x, x, mask=mask)
         x = self.dropout_layer(x)
-        x = x + residueal
-        return x, att_w, hidden
+        # x = x + residueal
+        return x
 
 # https://github.com/kimiyoung/transformer-xl/blob/44781ed21dbaec88b280f74d9ae2877f52b492a5/pytorch/mem_transformer.py
 # https://github.com/burchim/EfficientConformer/blob/master/models/encoders.py 
