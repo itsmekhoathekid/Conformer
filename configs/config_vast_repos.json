@@ -1,0 +1,93 @@
+{
+    "training" : {
+        "epochs" : 100,
+        "batch_size" : 4,
+        "save_path" : "workspace/Conformer/saves",
+        "train_path" : "workspace/dataset/train_w2i.json",
+        "dev_path" : "workspace/dataset/test_w2i.json",
+        "test_path" : "workspace/dataset/test_w2i.json",
+        "vocab_path" : "workspace/dataset/vocab_w2i.json",
+        "log_file" : "workspace/Conformer/logs/conformer.log",
+        "reload" : false,
+        "max_grad_norm" : 200,
+        "result" : "workspace/Conformer/result.txt"
+    },
+    "optim" : {
+        "type" : "adam",
+        "lr" : 0.0008,
+        "weight_decay" : 0.0001,
+        "decay_rate" : 0.5
+    },
+    "scheduler" : {
+        "lr_init" : 0.0008,
+        "warmup_steps" : 25000
+    },
+    "rnnt_loss" : {
+        "blank" : 0, 
+        "reduction" : "mean"
+    },
+    "model_name" : "Conformer_Transducer",
+    "encoder_params": 
+    {
+        "arch": "Conformer",
+        "num_blocks": 6,
+        "dim_model": 144,
+        "ff_ratio": 4,
+        "num_heads": 6,
+        "kernel_size": 31,
+        "Pdrop": 0.1,
+
+        "relative_pos_enc": true,
+        "max_pos_encoding": 10000,
+
+        "subsampling_module": "Conv2d",
+        "subsampling_layers": 2,
+        "subsampling_filters": [144, 144],
+        "subsampling_kernel_size": 3,
+        "subsampling_norm": "batch",
+        "subsampling_act": "swish",
+
+        "sample_rate": 16000,
+        "win_length_ms": 25,
+        "hop_length_ms": 10,
+        "n_fft": 512,
+        "n_mels": 80,
+        "normalize": false,
+        "mean": -5.6501,
+        "std": 4.2280,
+        
+        "output_dim" : 320,
+        "spec_augment": true,
+        "mF": 2,
+        "F": 27,
+        "mT": 10,
+        "pS": 0.05
+    },
+
+
+    "decoder_params" : {
+        "dec" : {
+            "embedding_size" : 512,
+            "hidden_size" : 512,
+            "vocab_size" : 4866,
+            "output_size" : 320,
+            "n_layers" : 1,
+            "dropout" : 0.1
+        }
+    },
+
+    "joint" : {
+        "type" : "concat",
+        "input_size" : 640,
+        "inner_size" : 512,
+        "vocab_size" : 4866
+    },
+    "vocab" : {
+        "sos" : 1,
+        "eos" : 2,
+        "blank" : 0
+    }
+    
+
+
+}

@@ -151,7 +151,7 @@ class ResidualConnection(nn.Module):
             self.multiplier = mutiplier
 
         def forward(self, x, sublayer):
-            return self.norm(x + self.mutiplier * self.dropout(sublayer(x)))
+            return self.norm(x + self.multiplier * self.dropout(sublayer(x)))
 
 class FeedForwardBlock(nn.Module):
 
