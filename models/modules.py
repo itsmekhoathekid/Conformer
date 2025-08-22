@@ -3,12 +3,45 @@ import torch
 import torch.nn as nn
 import math
 
-class Swish(nn.Module):
-    def __init__(self):
-        super(Swish, self).__init__()
-    """Swish activation function."""
+class Swish(torch.nn.Module):
+    """The class implements the Swish activation function from
+    https://arxiv.org/pdf/2005.03191.pdf
+
+    given input x. Swish(x) = x / (1 + exp(beta * x))
+
+    Arguments
+    ---------
+    beta: float
+        Beta value.
+
+    Example
+    -------
+    >>> x = torch.randn((8, 40, 120))
+    >>> act = Swish()
+    >>> x = act(x)
+    """
+
+    def __init__(self, beta: float = 1.0):
+        super().__init__()
+        self.beta = beta
+        self.silu = torch.nn.SiLU()
+
     def forward(self, x):
-        return x * torch.sigmoid(x)
+        """Returns the Swished input tensor.
+
+        Arguments
+        ---------
+        x : torch.Tensor
+            Input tensor.
+
+        Returns
+        -------
+        The swished output.
+        """
+        if self.beta != 1:  # slow path
+            x = x * self.beta
+
+        return self.silu(x)
 
 class ConvolutionModule(nn.Module):
     def __init__(self, dim_model, dim_expand, kernel_size, Pdrop, stride, padding, dilation = 1):
@@ -43,6 +76,7 @@ class ConvolutionModule(nn.Module):
 
     def forward(self, x):
         # x: (B, T, D)
+        residual = x 
         x = self.layer_norm(x)
         x = x.transpose(1, 2)  # (B, D, T)
 
@@ -57,6 +91,7 @@ class ConvolutionModule(nn.Module):
         x = self.conv1d_2(x)
         x = x.transpose(1, 2)  # (B, T', E)
         x = self.dropout(x)
+        x = x + residual  # (B, T', E)
         return x
 
 
@@ -131,7 +166,9 @@ class FeedForwardBlock(nn.Module):
         )
 
     def forward(self, x):
-        return self.layers(x) 
+        residual = x
+        x = self.layers(x) + residual
+        return x
 
 
 class ConvolutionResidual(nn.Module):

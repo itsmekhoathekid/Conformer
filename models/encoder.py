@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from .modules import ConvolutionModule, FeedForwardBlock, ConvolutionResidual, AttentionResidual, Conv2dSubsampling, get_mask_from_lens,PositionalEncoding
+from .modules import ConvolutionModule, FeedForwardBlock, ConvolutionResidual, AttentionResidual, Conv2dSubsampling, get_mask_from_lens,PositionalEncoding, ResidualConnection
 from .attention import MultiHeadSelfAttentionModule
 import torchaudio
 from typing import Optional, Callable, Type, List
@@ -59,14 +59,13 @@ class ConformerBlock(nn.Module):
         self.ffn_2 = FeedForwardBlock(dim_expand, dim_expand * ff_ratio, Pdrop, act = 'swish')
         self.multihead_attention = MultiHeadSelfAttentionModule(num_heads, dim_model, Pdrop, max_pos_encoding = 5000, attention_type=attention_type)
         self.conv_residual = ConvolutionResidual(dim_model, dim_expand, kernel_size, conv_stride)
-        self.norm1 = nn.LayerNorm(dim_model, eps=1e-6)
+        # self.norm1 = nn.LayerNorm(dim_model, eps=1e-6)
         self.norm2 = nn.LayerNorm(dim_expand, eps=1e-6)
         # self.atten_residual = AttentionResidual(att_stride)
         self.stride = conv_stride * att_stride
-
+        self.dropout = nn.Dropout(Pdrop)
     def forward(self, x, mask=None, hidden=None):
         x = x + 1/2 * self.ffn_1(x)
-        x = self.norm1(x)
         x_att, attention, _ = self.multihead_attention(x, mask, hidden)
         x = x  + x_att
         
@@ -319,8 +318,7 @@ class ConformerEncoder(nn.Module):
         
         x = self.linear(x)
         x = self.dropout(x)
-        if self.pe:
-            x = self.pe(x)
+        x = self.pe(x) if self.pe else x  # Apply positional encoding if needed
 
         for layer in self.layers:
             x, attention, _ = layer(x, mask)

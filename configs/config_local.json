@@ -1,7 +1,7 @@
 {
     "training" : {
         "epochs" : 100,
-        "batch_size" : 1,
+        "batch_size" : 2,
         "save_path" : "/home/anhkhoa/Conformer/saves",
         "train_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/train.json",
         "dev_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/dev.json",
@@ -37,7 +37,7 @@
         "conv_stride" : 1,
         "att_stride" : 1,
         "padding" :  "same",
-        "in_features" : 640,
+        "in_features" : 200,
         "output_size" : 320,
         "conv_type" : 2,
         "conv_subsampling" : {
@@ -74,7 +74,7 @@
     },
 
     "joint" : {
-        "type" : "sum",
+        "type" : "concat",
         "input_size" : 320,
         "inner_size" : 512,
         "vocab_size" : 4866
