@@ -166,7 +166,7 @@ class ConvBlock(nn.Module):
         else:
             self.shortcut = None
 
-    def forward(self, x, mask):
+    def forward(self, x, x_len):
         B, C, T, F = x.shape
         residual_input = x  
 
@@ -178,23 +178,22 @@ class ConvBlock(nn.Module):
                 d = layer.dilation[0]
                 p = layer.padding[0]
                 out_T = (T + 2 * p - d * (k - 1) - 1) // s + 1
-                pad_len = T - mask.sum(dim=1)
-                data_len = mask.sum(dim=1)
-                new_len = calc_data_len(
+                pad_len = T - x_len
+                data_len = x_len
+                x_len = calc_data_len(
                     result_len=out_T,
                     pad_len=pad_len,
                     data_len=data_len,
                     kernel_size=k,
                     stride=s,
                 )
-                mask = get_mask_from_lens(new_len, out_T)
                 T = out_T
 
         if self.residual:
             shortcut = self.shortcut(residual_input)  # 👉 fix chỗ này
             x = x + shortcut
 
-        return x, mask
+        return x, x_len
 
 
 class ConvolutionFrontEnd(nn.Module):
@@ -231,10 +230,15 @@ class ConvolutionFrontEnd(nn.Module):
 
         self.model = nn.ModuleList(blocks)
 
-    def forward(self, x, mask):
+    def forward(self, x, x_len):
+        x = x.unsqueeze(1)
         for i, block in enumerate(self.model):
-            x, mask = block(x, mask)
-        return x, mask
+            x, x_len = block(x, x_len)
+        x = x.transpose(1,2)
+        # print(x.shape)
+        x = x.reshape(x.size(0), x.size(1), -1)  # Flatten the last two dimensions
+        # print(x.shape)
+        return x, x_len
 
 class ConformerEncoder(nn.Module):
     def __init__(self, config):

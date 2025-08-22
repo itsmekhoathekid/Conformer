@@ -39,7 +39,7 @@
         "padding" :  "same",
         "in_features" : 1600,
         "output_size" : 320,
-        "conv_type" : 1,
+        "conv_type" : 2,
         "conv_subsampling" : {
             "num_layers" : 2,
             "filters" : [64, 32],
@@ -74,7 +74,8 @@
     },
 
     "joint" : {
-        "input_size" : 640,
+        "type" : "sum",
+        "input_size" : 320,
         "inner_size" : 512,
         "vocab_size" : 4866
     },

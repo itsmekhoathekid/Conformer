@@ -58,7 +58,7 @@ def train_one_epoch(model, dataloader, optimizer, criterion, device, scheduler):
         decoder_input = batch["decoder_input"].to(device)
         
         optimizer.zero_grad()
-        output, fbank_len = model(speech, fbank_len.long(), decoder_input.int(), text_len.long())
+        output, fbank_len = model(speech, fbank_len.long(), decoder_input.int(), text_len.long(), training=False)
         # exit()
         loss = criterion(output, target_text, fbank_len, text_len)
         loss.backward()
