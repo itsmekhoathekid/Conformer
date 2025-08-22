@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from .modules import ConvolutionModule, FeedForwardBlock, ConvolutionResidual, AttentionResidual, Conv2dSubsampling, get_mask_from_lens,PositionalEncoding, ResidualConnection, FeedForwardModule
-from .attention import MultiHeadSelfAttentionModule
+from .attention import MultiHeadSelfAttentionModule, MultiHeadAttentionBlock
 import torchaudio
 from typing import Optional, Callable, Type, List
 
@@ -57,7 +57,7 @@ class ConformerBlock(nn.Module):
         self.conv_module = ConvolutionModule(dim_model, dim_expand, kernel_size, Pdrop, conv_stride, "causal" if padding == 'causal' else 'same')
         self.ffn_1 = FeedForwardModule(dim_model, dim_model * ff_ratio,  Pdrop)
         self.ffn_2 = FeedForwardModule(dim_model, dim_model * ff_ratio,  Pdrop)
-        self.multihead_attention = MultiHeadSelfAttentionModule(num_heads, dim_model, Pdrop, max_pos_encoding = 5000, attention_type=attention_type)
+        self.multihead_attention = MultiHeadAttentionBlock(dim_model, num_heads, dropout = Pdrop)
         self.conv_residual = ConvolutionResidual(dim_model, dim_expand, kernel_size, conv_stride)
         # self.norm1 = nn.LayerNorm(dim_model, eps=1e-6)
         self.norm2 = nn.LayerNorm(dim_expand, eps=1e-6)
@@ -73,7 +73,7 @@ class ConformerBlock(nn.Module):
     def forward(self, x, mask=None, hidden=None):
         x = self.residual_modules[0](x, lambda x: self.ffn_1(x))
         x = self.residual_modules[1](x, lambda x: self.multihead_attention(x, mask, hidden))
-        x = self.residual_modules[2](x, lambda x: self.conv_residual(x))
+        x = self.residual_modules[2](x, lambda x: self.conv_module(x))
         x = self.residual_modules[3](x, lambda x: self.ffn_2(x))
         x = self.norm2(x)
         return x

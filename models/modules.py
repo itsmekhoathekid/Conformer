@@ -76,7 +76,7 @@ class ConvolutionModule(nn.Module):
 
     def forward(self, x):
         # x: (B, T, D)
-        residual = x 
+        # residual = x 
         x = self.layer_norm(x)
         x = x.transpose(1, 2)  # (B, D, T)
 
@@ -91,7 +91,7 @@ class ConvolutionModule(nn.Module):
         x = self.conv1d_2(x)
           # (B, T', E)
         x = self.dropout(x)
-        x = x + residual  # (B, T', E)
+        # x = x + residual  # (B, T', E)
         return x
 
 
@@ -151,7 +151,7 @@ class ResidualConnection(nn.Module):
             self.multiplier = mutiplier
 
         def forward(self, x, sublayer):
-            return self.norm(x + self.dropout(sublayer(x)))
+            return self.norm(x + self.mutiplier * self.dropout(sublayer(x)))
 
 class FeedForwardBlock(nn.Module):
 
