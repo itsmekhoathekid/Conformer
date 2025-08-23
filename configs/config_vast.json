@@ -28,38 +28,16 @@
     },
     "model_name" : "Conformer_Transducer",
     "encoder_params" : {
-        "n_layers" : 6, 
-        "d_model" : 512,
-        "dim_expand" : 512,
-        "ff_ratio" : 4,
-        "num_heads" : 4,
-        "kernel_size" : 31,
-        "p_dropout" : 0.1,
-        "conv_stride" : 1,
-        "att_stride" : 1,
-        "padding" :  "same",
-        "in_features" : 640,
-        "output_size" : 320,
-        "conv_type" : 2,
-        "conv_subsampling" : {
-            "num_layers" : 2,
-            "filters" : [64, 32],
-            "kernel_size" : 3,
-            "norm" : "batch",
-            "act" : "swish"
-        },
-        "conv_subsampling_2" : {
-
-        },
-        "attention_type" : "mha",
-
-        "spec_augment" : {
-            "spec_augment" : true,
-            "mF" : 2,
-            "F" : 27,
-            "mT" : 10,
-            "pS" : 0.05
-        }
+        "input_dim" : 80,
+        "encoder_dim" : 256,
+        "num_attention_heads" : 8,
+        "feed_forward_expansion_factor" : 4,
+        "dropout_rate" : 0.1,
+        "conv_kernel_size" : 31,
+        "num_encoder_layers" : 1,
+        "output_dim" : 320,
+        "in_channels" : 1,
+        "out_channels" : 32
     },
 
 

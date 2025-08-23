@@ -8,7 +8,7 @@
         "test_path" : "workspace/dataset/test_w2i.json",
         "vocab_path" : "workspace/dataset/vocab_w2i.json",
         "log_file" : "workspace/Conformer/logs/conformer.log",
-        "reload" : true,
+        "reload" : false,
         "max_grad_norm" : 200,
         "result" : "workspace/Conformer/result.txt"
     },
@@ -45,7 +45,7 @@
         "subsampling_filters": [64, 32],
         "subsampling_kernel_size": 3,
         "subsampling_norm": "batch",
-        "subsampling_act": "relu",
+        "subsampling_act": "swish",
 
         "sample_rate": 16000,
         "win_length_ms": 25,

@@ -5,17 +5,11 @@ from .decoder import build_decoder
 import torch.nn.functional as F
 
 class JointNet(nn.Module):
-    def __init__(self, input_size, inner_dim, vocab_size, joint_type):
+    def __init__(self, input_size, inner_dim, vocab_size):
         super(JointNet, self).__init__()
-        
+        self.forward_layer = nn.Linear(input_size, inner_dim, bias=True)
         self.tanh = nn.Tanh()
-        self.joint_type = joint_type
-        if self.joint_type == "concat":
-            self.forward_layer = nn.Linear(input_size, inner_dim, bias=True)
-            self.project_layer = nn.Linear(inner_dim, vocab_size, bias=True)
-        elif self.joint_type == "sum":
-            self.forward_layer = None
-            self.project_layer = nn.Linear(input_size, vocab_size, bias=True)
+        self.project_layer = nn.Linear(inner_dim, vocab_size, bias=True)
 
     def forward(self, enc_state, dec_state):
         if enc_state.dim() == 3 and dec_state.dim() == 3:
@@ -30,15 +24,13 @@ class JointNet(nn.Module):
         else:
             assert enc_state.dim() == dec_state.dim()
 
-        if self.joint_type == "sum":
-            outputs = enc_state + dec_state
-        elif self.joint_type == "concat":
-            concat_state = torch.cat((enc_state, dec_state), dim=-1)
-            outputs = self.forward_layer(concat_state)
+        concat_state = torch.cat((enc_state, dec_state), dim=-1)
+        outputs = self.forward_layer(concat_state)
         outputs = self.tanh(outputs)
         outputs = self.project_layer(outputs)
 
         return outputs
+
 
 
 class ConformerTransducer(nn.Module):
@@ -51,15 +43,13 @@ class ConformerTransducer(nn.Module):
             input_size=config["joint"]["input_size"],
             inner_dim=config["joint"]["inner_size"],
             vocab_size=config["joint"]["vocab_size"],
-            joint_type=config["joint"]["type"]
         )
         self.sos = config["vocab"]["sos"]
         self.eos = config["vocab"]["eos"]
         self.blank = config["vocab"]["blank"]
-        self.joint_type = config["joint"]["type"]
 
     def forward(self, inputs, inputs_length, targets, targets_length, training = True):
-        enc_state, fbank_len = self.encoder(inputs, inputs_length, training)
+        enc_state, fbank_len = self.encoder(inputs, inputs_length)
         dec_state, _ = self.decoder(targets, targets_length)
         joint_outputs = self.joint(enc_state, dec_state)
         return joint_outputs, fbank_len
