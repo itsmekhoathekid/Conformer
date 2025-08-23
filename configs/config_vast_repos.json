@@ -35,7 +35,7 @@
         "ff_ratio": 4,
         "num_heads": 8,
         "kernel_size": 31,
-        "Pdrop": 0.1,
+        "Pdrop": 0.3,
 
         "relative_pos_enc": true,
         "max_pos_encoding": 10000,
@@ -72,7 +72,7 @@
             "vocab_size" : 4866,
             "output_size" : 320,
             "n_layers" : 1,
-            "dropout" : 0.1
+            "dropout" : 0.3
         }
     },
 
