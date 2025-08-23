@@ -59,7 +59,7 @@ class ConformerTransducer(nn.Module):
         self.joint_type = config["joint"]["type"]
 
     def forward(self, inputs, inputs_length, targets, targets_length, training = True):
-        enc_state, fbank_len = self.encoder(inputs, inputs_length)
+        enc_state, fbank_len = self.encoder(inputs, inputs_length, training)
         dec_state, _ = self.decoder(targets, targets_length)
         joint_outputs = self.joint(enc_state, dec_state)
         return joint_outputs, fbank_len

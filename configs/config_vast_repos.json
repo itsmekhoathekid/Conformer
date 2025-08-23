@@ -8,7 +8,7 @@
         "test_path" : "workspace/dataset/test_w2i.json",
         "vocab_path" : "workspace/dataset/vocab_w2i.json",
         "log_file" : "workspace/Conformer/logs/conformer.log",
-        "reload" : false,
+        "reload" : true,
         "max_grad_norm" : 200,
         "result" : "workspace/Conformer/result.txt"
     },
@@ -31,9 +31,9 @@
     {
         "arch": "Conformer",
         "num_blocks": 6,
-        "dim_model": 144,
+        "dim_model": 512,
         "ff_ratio": 4,
-        "num_heads": 6,
+        "num_heads": 8,
         "kernel_size": 31,
         "Pdrop": 0.1,
 
@@ -42,14 +42,14 @@
 
         "subsampling_module": "Conv2d",
         "subsampling_layers": 2,
-        "subsampling_filters": [144, 144],
+        "subsampling_filters": [64, 32],
         "subsampling_kernel_size": 3,
         "subsampling_norm": "batch",
-        "subsampling_act": "swish",
+        "subsampling_act": "relu",
 
         "sample_rate": 16000,
         "win_length_ms": 25,
-        "hop_length_ms": 10,
+        "hop_length_ms": 10,    
         "n_fft": 512,
         "n_mels": 80,
         "normalize": false,

@@ -360,7 +360,7 @@ class ConformerEncoder(nn.Module):
         # self.preprocessing = AudioPreprocessing(params["sample_rate"], params["n_fft"], params["win_length_ms"], params["hop_length_ms"], params["n_mels"], params["normalize"], params["mean"], params["std"])
         
         # # Spec Augment
-        # self.augment = SpecAugment(params["spec_augment"], params["mF"], params["F"], params["mT"], params["pS"])
+        self.augment = SpecAugment(params["spec_augment"], params["mF"], params["F"], params["mT"], params["pS"])
 
         # Subsampling Module
         if params["subsampling_module"] == "Conv1d":
@@ -405,14 +405,14 @@ class ConformerEncoder(nn.Module):
         ) for block_id in range(params["num_blocks"])])
 
         self.projected = nn.Linear(params['dim_model'], params['output_dim'])
-    def forward(self, x, x_len=None):
+    def forward(self, x, x_len, training):
 
         # # Audio Preprocessing
         # x, x_len = self.preprocessing(x, x_len)
 
         # # Spec Augment
-        # if self.training:
-        #     x = self.augment(x, x_len)
+        if training:
+            x = self.augment(x, x_len)
 
         # Subsampling Module
 

@@ -95,7 +95,7 @@ class AudioPreprocessing(nn.Module):
         if self.normalize:
             x = (x - self.mean) / self.std
 
-        return x, x_len
+        return x
 
 def stack_context(x, left=3, right=1):
     """x: (T, D) -> (T, (left+1+right)*D) | pad biên bằng replicate."""
@@ -126,6 +126,16 @@ class Speech2Text(Dataset):
             n_mels=80,
             n_fft=512,
             win_length=25,
+        )
+        self.audio_preprocessing = AudioPreprocessing(
+            sample_rate=16000,
+            n_fft=512,
+            win_length_ms=25,
+            hop_length_ms=10,
+            n_mels=80,
+            normalize=False,
+            mean=0.0,
+            std=1.0
         )
 
 
@@ -164,13 +174,19 @@ class Speech2Text(Dataset):
         x = stack_context(x, left=3, right=1) 
         return torch.tensor(subsample(x, 10, 30))
 
+    def extract_features_2(self, wav_file):
+        y, sr = torchaudio.load(wav_file)
+        audio = self.audio_preprocessing(y, None)
+        # print(audio.squeeze(0).shape)  # [T, 80]
+        return audio.squeeze(0).transpose(0,1)  # [T, 80]
+
     def __getitem__(self, idx):
         current_item = self.data[idx]
         wav_path = current_item["wav_path"]
         encoded_text = torch.tensor(current_item["encoded_text"] + [self.eos_token], dtype=torch.long)
         decoder_input = torch.tensor([self.sos_token] + current_item["encoded_text"] + [self.pad_token], dtype=torch.long)
         tokens = torch.tensor(current_item["encoded_text"], dtype=torch.long)
-        fbank = self.extract_from_path(wav_path).float()  # [T, 512]
+        fbank = self.extract_features_2(wav_path).float()  # [T, 512]
 
         return {
             "text": encoded_text,
