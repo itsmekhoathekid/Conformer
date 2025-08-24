@@ -1,15 +1,30 @@
 import torch
 import torch.nn as nn
-from .modules import Linear, Conv2dSubampling, FeedForwardModule, ConvolutionalModule, ResidualConnection
+from .modules import Linear, Conv2dSubampling, FeedForwardModule, ConvolutionalModule, ResidualConnection, MultiConvolutionalGatingMLP
 from .attention import MultiHeadedSelfAttentionModule
 
 class ConformerBlock(nn.Module):
-    def __init__(self, d_model, n_heads, ff_ratio, dropout, kernel_size):
+    def __init__(self, d_model, n_heads, ff_ratio, dropout, kernel_size, conv_type, conv_config=None):
         super(ConformerBlock, self).__init__()
         
         self.ffm1 = FeedForwardModule(d_model, ff_ratio * d_model, dropout, activation="swish")
         self.attention = MultiHeadedSelfAttentionModule(d_model, n_heads, dropout)
-        self.conv_module = ConvolutionalModule(d_model, kernel_size, dropout)
+        
+        if conv_type != "default":
+            self.conv_module = MultiConvolutionalGatingMLP(
+                conv_config["size"],
+                conv_config["linear_units"],
+                conv_config["fuse_type"],
+                conv_config["kernel_sizes"],
+                conv_config["merge_conv_kernel_size"],
+                conv_config["use_non_linear"],
+                dropout, 
+                conv_config["use_linear_after_conv"],
+                conv_config["activation"],
+                conv_config["gate_activation"]
+            )
+        else:
+            self.conv_module = ConvolutionalModule(d_model, kernel_size, dropout)
         self.ffm2 = FeedForwardModule(d_model, ff_ratio * d_model, dropout, activation="swish")
 
         self.residual_connections = nn.ModuleList([
@@ -43,7 +58,9 @@ class ConformerEncoder(nn.Module):
                 n_heads=config["num_attention_heads"],
                 ff_ratio=config["feed_forward_expansion_factor"],
                 dropout=config["dropout_rate"],
-                kernel_size=config["conv_kernel_size"]
+                kernel_size=config["conv_kernel_size"],
+                conv_type=config.get("conv_type", "default"),
+                conv_config=config.get("conv_config", None)
             ) for _ in range(config["num_encoder_layers"])
         ])
        

@@ -1,0 +1,84 @@
+{
+    "training" : {
+        "epochs" : 100,
+        "batch_size" : 4,
+        "save_path" : "workspace/Conformer/saves",
+        "train_path" : "workspace/dataset/train_w2i.json",
+        "dev_path" : "workspace/dataset/test_w2i.json",
+        "test_path" : "workspace/dataset/test_w2i.json",
+        "vocab_path" : "workspace/dataset/vocab_w2i.json",
+        "log_file" : "workspace/Conformer/logs/conformer.log",
+        "reload" : false,
+        "max_grad_norm" : 200,
+        "result" : "workspace/Conformer/result.txt"
+    },
+    "optim" : {
+        "type" : "adam",
+        "lr" : 0.001,
+        "weight_decay" : 0.0001,
+        "decay_rate" : 0.5
+    },
+    "scheduler" : {
+        "lr_init" : 0.001,
+        "warmup_steps" : 10000
+    },
+    "rnnt_loss" : {
+        "blank" : 0, 
+        "reduction" : "mean"
+    },
+    "model_name" : "Conformer_Transducer",
+    "encoder_params" : {
+        "type" : "conv-conformer", 
+        
+
+        "input_dim" : 80,
+        "encoder_dim" : 144,
+        "num_attention_heads" : 8,
+        "feed_forward_expansion_factor" : 4,
+        "dropout_rate" : 0.1,
+        "conv_kernel_size" : 31,
+        "num_encoder_layers" : 1,
+        "output_dim" : 320,
+        "in_channels" : 1,
+        "out_channels" : 32,
+
+        "conv_config" : {
+            "size" : 144,
+            "linear_units" : 576,
+            "fuse_type" : "concat_fusion",
+            "kernel_sizes" : [7, 15, 23, 31],
+            "merge_conv_kernel_size" : 3,
+            "use_non_linear" : true,
+            "use_linear_after_conv" : true,
+            "activation" : "swish",
+            "gate_activation" : "swish"
+        }
+    },
+
+
+    "decoder_params" : {
+        "dec" : {
+            "embedding_size" : 512,
+            "hidden_size" : 512,
+            "vocab_size" : 4866,
+            "output_size" : 320,
+            "n_layers" : 1,
+            "dropout" : 0.1
+        }
+    },
+
+    "joint" : {
+        "type" : "concat",
+        "input_size" : 640,
+        "inner_size" : 512,
+        "vocab_size" : 4866
+    },
+    "vocab" : {
+        "sos" : 1,
+        "eos" : 2,
+        "blank" : 0
+    }
+    
+
+
+}
