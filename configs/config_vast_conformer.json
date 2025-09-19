@@ -10,7 +10,8 @@
         "log_file" : "workspace/Conformer/logs/conformer.log",
         "reload" : false,
         "max_grad_norm" : 200,
-        "result" : "workspace/Conformer/result.txt"
+        "result" : "workspace/Conformer/result.txt",
+        "type" : "normal"
     },
     "optim" : {
         "type" : "adam",

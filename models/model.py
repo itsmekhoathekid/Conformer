@@ -59,7 +59,6 @@ class ConformerTransducer(nn.Module):
 
         enc_states, inputs_length = self.encoder(inputs, inputs_length)
         zero_token = torch.LongTensor([[self.sos]]) 
-
         
         if inputs.is_cuda:
             zero_token = zero_token.cuda()

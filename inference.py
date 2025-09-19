@@ -23,6 +23,17 @@ def ids_to_text(ids, itos, eos_id=None):
         tokens.append(token)
     return ' '.join(tokens)
 
+def ids_to_text_phoneme(ids, itos, eos_id=None):
+    tokens = []
+    for idx in ids:
+        if eos_id is not None and idx == eos_id:
+            break
+        token = itos.get(idx, '')
+        if token in ['<pad>','<s>','</s>','<unk>','<blank>','<space>']:
+            continue
+        tokens.append(token)
+    return ''.join(tokens).replace('<space>', ' ').strip()
+
 def main():
     parser = argparse.ArgumentParser(description="Inference script for RNN-T speech-to-text model")
     parser.add_argument('--config', required=True, help='Path to YAML config file')
@@ -69,8 +80,12 @@ def main():
                 pred_ids = batch_preds[i]
                 true_ids = batch['text'][i].tolist()
 
-                pred_text = ids_to_text(pred_ids, itos, eos_id=eos_id)
-                true_text = ids_to_text(true_ids, itos, eos_id=eos_id)
+                if full_cfg['training']['type'] == 'phoneme':
+                    pred_text = ids_to_text_phoneme(pred_ids, itos, eos_id=eos_id)
+                    true_text = ids_to_text_phoneme(true_ids, itos, eos_id=eos_id)
+                else:
+                    pred_text = ids_to_text(pred_ids, itos, eos_id=eos_id)
+                    true_text = ids_to_text(true_ids, itos, eos_id=eos_id)
 
                 pred_texts.append(pred_text)
                 true_texts.append(true_text)
