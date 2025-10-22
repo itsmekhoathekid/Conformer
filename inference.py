@@ -63,7 +63,8 @@ def main():
     loader = DataLoader(dataset,
                         batch_size=1,
                         shuffle=False,
-                        collate_fn=speech_collate_fn)
+                        collate_fn=speech_collate_fn,
+                        num_workers=4)
 
     pred_texts = []
     true_texts = []

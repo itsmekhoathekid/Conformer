@@ -1,0 +1,2280 @@
+Predict text: trở nên thủ động
+Ground truth: trở nên thụ động
+---------------
+Predict text: cũng phía cho họ gì gặp
+Ground truth: cũng khiến cho họ dè
+---------------
+Predict text: trước giảng hỏi anh thời sống thể trên bà không cho
+Ground truth: chị hỏi anh thề sống thề chết là không có
+---------------
+Predict text: phải lan nhưng ta cũng khỏi nhất may tốn không
+Ground truth: điện thoại nhưng ta cũng phải nhấc máy đúng không
+---------------
+Predict text: cố thuốc là giờ đặt nhất cho hệ mặt chợ
+Ground truth: cũng thuộc loại dày đặc nhất trong hệ mặt trời
+---------------
+Predict text: các cuộc tham nhũng và văn bố kinh tế
+Ground truth: các vụ tham nhũng và bê bối kinh tế
+---------------
+Predict text: chúng có ngồi lại mặt dù tiêu công riêng
+Ground truth: chúng cứ cố lùi lại mặc dù vướng víu gông
+---------------
+Predict text: buông dự em chị ra cái gì em để kiếm
+Ground truth: bọn buôn dự án chạy chọt bày ra các dự án để kiếm chác
+---------------
+Predict text: đất cả một thứ về kiều mục cách phi thường
+Ground truth: tất cả mọi thứ đều kỳ lạ một cách phi thường
+---------------
+Predict text: các chuyên trình trang nhạc và lớn đều không đọc thuế
+Ground truth: các chương trình ca nhạc phần lớn đều không đột phá
+---------------
+Predict text: rồi kể sang rõ cửa phòng ba giám
+Ground truth: rồi chạy sang gõ cửa phòng ba le hai
+---------------
+Predict text: để trả chở lại mặt dương
+Ground truth: để trả trở lại đại dương
+---------------
+Predict text: nàng có mắt tôi sau và tìm tránh rộng minh ngon
+Ground truth: nàng có đôi mắt to sâu và vầng trán rộng mênh mông
+---------------
+Predict text: tôi tự hỏi phải tranh đó lại cho gian còn quá chỉ đến
+Ground truth: tôi tự hỏi phải chăng đó là do còn quá trẻ
+---------------
+Predict text: lý qua châu ông kê gọi những gia phát triển lễ
+Ground truth: ủy ban châu âu kêu gọi những quốc gia phát triển còn lại
+---------------
+Predict text: và khi chúng ta sợ trong việc của mình
+Ground truth: và khi chúng ta sao công việc của mình
+---------------
+Predict text: có thể là không để loại nước sẽ
+Ground truth: có thể lành lặn mà không để lại vết sẹo
+---------------
+Predict text: muốn đẹp phải truyền làm sao các bó cơ mỗi lên
+Ground truth: muốn đẹp phải ghè làm sao cho các bó cơ chân nổi bật lên
+---------------
+Predict text: đi với bình hưng hòa bị hư học
+Ground truth: y tế bình hưng hòa bị hư hỏng
+---------------
+Predict text: cô cứ nhà cái độc cái
+Ground truth: cô cứ nhè ngay cái nọng cá trê
+---------------
+Predict text: nếu tự bảy đám năm nữa
+Ground truth: nếu tưởng tượng bảy tám năm nữa
+---------------
+Predict text: ông chủ tịch đi bố như thế nào
+Ground truth: ông chủ tịch tuyên bố như thế nào
+---------------
+Predict text: chiến hai cha con cậu
+Ground truth: khiến hai cha con cậu
+---------------
+Predict text: làm đẹp không tính các
+Ground truth: làm đẹp không đúng cách
+---------------
+Predict text: khi xe lá tuy nghe qua tấn trẻ mới đem ra đổ
+Ground truth: mỗi khi xe rác đi ngang qua đánh kẻng mới đem ra đổ
+---------------
+Predict text: hay vì bốn giờ như trước đây
+Ground truth: thay vì bốn giờ như trước đây
+---------------
+Predict text: hầu hết trang này có quần góc từ dân
+Ground truth: hầu hết nang này có nguồn gốc từ gân cơ chân
+---------------
+Predict text: mở đó sách lạnh giao và trả biến doanh ngữ
+Ground truth: tiếng mã tấu sắc lạnh chạm nhau và cả tiếng rên rỉ
+---------------
+Predict text: có hẳn một loạt bài viết chuyên đề về quản trị thương hiệu
+Ground truth: có hẳn một loạt bài viết chuyên đề về quản trị thương hiệu
+---------------
+Predict text: hợp mới thương vì đầu sơn
+Ground truth: hợp với hương vị đầu xuân
+---------------
+Predict text: ống nói ở sài vọng đã làm ông hội đồng duy thế nào
+Ground truth: ổng nói ở sài gòn ổng đã làm ông hội đồng như thế nào
+---------------
+Predict text: ba quản vấn đang bệnh ruộng
+Ground truth: bà quảng vẫn đang bận rộn
+---------------
+Predict text: mày dám chơi vợ ra ba chỉ mày
+Ground truth: mày dám chơi vợ tao tao phải giết mày
+---------------
+Predict text: đóng cổ hắn đi không được để thắng và đây nữa
+Ground truth: tống cổ hắn đi không được để hắn vào đây nữa
+---------------
+Predict text: hắn chơi vật ăn vì cho anh không chơi vợ
+Ground truth: hắn chơi vợ anh thì sao anh không chơi vợ hắn
+---------------
+Predict text: tháng trước tròn về máy ngày mình ngủ thấy ấm viên cũng
+Ground truth: tháng trước chồng về mấy ngày mình nằm ngủ thấy ấm kinh khủng
+---------------
+Predict text: cho em rất một viên gạch
+Ground truth: cho em góp một viên gạch
+---------------
+Predict text: viết kiểm tra là quá sĩ nên mỗi đội so
+Ground truth: đi kiểm tra lại bác sĩ khuyên nên mổ nội soi
+---------------
+Predict text: hôm ấy em có tới năm
+Ground truth: hôm nay em có tới năm khách
+---------------
+Predict text: ăn biệt để tiêu thành nội sài gòn
+Ground truth: anh bị đẩy từ hà nội vào sài gòn
+---------------
+Predict text: của họ cho chân nặng
+Ground truth: phù hợp cho mọi cân nặng
+---------------
+Predict text: ông thậm chắc chưa nuôi không lớn
+Ground truth: âm thầm chắt nuôi tôi khôn lớn
+---------------
+Predict text: vì bạn có thể còn từng thấy một
+Ground truth: vì bạn có thể cò từng phát một
+---------------
+Predict text: vai trò của cháu đầu dân dưỡng dưỡng
+Ground truth: vai trò của chế độ dinh dưỡng
+---------------
+Predict text: không hiểu sao
+Ground truth: không hiểu sao
+---------------
+Predict text: khiến bà hiểu nhằm nhằm
+Ground truth: khiến phụ huynh hiểu nhầm
+---------------
+Predict text: mỗi khi cơ do đến
+Ground truth: mỗi khi cơn gió đến
+---------------
+Predict text: này bóng cho con hương đổi yêu đâu tôi cặp
+Ground truth: này bón cho con thương đỡ yếu đau còi cọc
+---------------
+Predict text: trong tư thế khi cho lên
+Ground truth: trong tư thế phi ngựa chồm lên
+---------------
+Predict text: mà cũng đây thanh thiết
+Ground truth: mà cũng đầy thanh khiết
+---------------
+Predict text: một chục đen đã khiến ông nói buông lên
+Ground truth: một vụ chập điện đã khiến ngọn lửa bùng lên
+---------------
+Predict text: và con chồng sớm
+Ground truth: bà con xóm
+---------------
+Predict text: đây là mức lãi xuất cấp nhất của các thiên đấu hầu
+Ground truth: đây là mức lãi suất thấp nhất qua các phiên đấu thầu
+---------------
+Predict text: dọc hai bên sông ngàn sau
+Ground truth: dọc hai bên sông ngàn sâu
+---------------
+Predict text: nhưng ấy ông than
+Ground truth: nhưng oái ăm thay
+---------------
+Predict text: sau kể cách
+Ground truth: sau cải cách
+---------------
+Predict text: một kết hoạch tương tự được áp dụng ở anh
+Ground truth: một kế hoạch tương tự được áp dụng ở anh
+---------------
+Predict text: phải ngồi đi thêm
+Ground truth: ngựa đi thi
+---------------
+Predict text: ngôi
+Ground truth: ôi dào
+---------------
+Predict text: không một chiếc xe lạ với thể mong mang vào được
+Ground truth: không một chiếc xe lạ nào có thể men vào được
+---------------
+Predict text: rồi đi thấp nơi tìm chữa bệnh cho anh
+Ground truth: rồi đi khắp nơi tìm thầy chữa bệnh cho anh
+---------------
+Predict text: bên trong trái đã bỏ ra sẽ rộng chiếc không đặt như trái xung
+Ground truth: bên trong trái vả khi bổ ra sẽ rỗng chứ không đặc như trái sung
+---------------
+Predict text: nên hai muốn cầu bị vực đất kiến nói đi bộ quá
+Ground truth: nên hai cầu bị đất khiến lối đi bộ quá nguy hiểm
+---------------
+Predict text: luôn ổn định và các xe cháu khá nặng
+Ground truth: luôn ổn định và các xe trấu khá nặng
+---------------
+Predict text: và khi họ có ra
+Ground truth: và khi họ vạch tóc ra
+---------------
+Predict text: của chính sách đối với thị trường
+Ground truth: của chính sách đối với quy mô của thị trường
+---------------
+Predict text: xương đã động thành những hạt giá văn
+Ground truth: sương mù đã đọng thành những hạt giá băng
+---------------
+Predict text: chứ không phải tài năng thiên vẫn nào
+Ground truth: chứ không phải tài năng thiên bẩm nào
+---------------
+Predict text: là tiếng trống ngân sàn sàn tai
+Ground truth: là tiếng trống lân tùng vui tai
+---------------
+Predict text: một chuyến du lịch giải ngoại tệ do cặp vàng
+Ground truth: một chuyến du lịch dã ngoại tại bò cạp vàng
+---------------
+Predict text: nghĩa cần may giả vào thân của thủ cho hoa lớn
+Ground truth: ghép cành mai vào thân cổ thụ cho hoa cánh lớn
+---------------
+Predict text: để chọn máy cho phụ họp
+Ground truth: để chọn máy in cho phù hợp
+---------------
+Predict text: bác thuận chơi đã tìm cho đây nhé
+Ground truth: bác vẫn chưa trả tiền cho tôi đây nhé
+---------------
+Predict text: vai đang bệnh hợp
+Ground truth: tôi đang bận họp
+---------------
+Predict text: kết đề đường công an chỉ lo thật sách
+Ground truth: cướp đầy đường công an chỉ lo hạch sách
+---------------
+Predict text: mẹ ơi có mua đồ cho con không
+Ground truth: mẹ ơi có mua đồ cho con không
+---------------
+Predict text: con chó nổi đi theo chủ nó
+Ground truth: con chó lủi thủi đi theo chủ nó
+---------------
+Predict text: trong phim có nhiều cảnh chém giúp
+Ground truth: trong phim có nhiều cảnh chém giết
+---------------
+Predict text: những tránh đứng như gỗ gỗ
+Ground truth: diễn viên chính đứng như khúc gỗ
+---------------
+Predict text: ở đang nghĩ nhiên thế
+Ground truth: bác đang suy nghĩ gì thế
+---------------
+Predict text: khi chẳng khó bệnh thì sẽ đầu
+Ground truth: khi trẫm khỏi bệnh thì sẽ chém đầu
+---------------
+Predict text: việc một quyển tiểu như thế
+Ground truth: việc một quyển tiểu thuyết như thế
+---------------
+Predict text: những cơn gió mạnh và mưa đóng băng gây chân chờ
+Ground truth: những cơn gió mạnh và mưa đóng băng gây trơn trợt
+---------------
+Predict text: áo bỏ chúng ta phát triển những cung động yêu hương
+Ground truth: não bộ chúng ta phát triển những rung động yêu thương
+---------------
+Predict text: trừ khi bạn viết câu chồng bán hơn mình
+Ground truth: trừ khi bạn biết tôn trọng bản thân mình
+---------------
+Predict text: những con đường nắng ngủ như những da cấp
+Ground truth: những con đường ngắn ngủn như những nhát cắt
+---------------
+Predict text: hiện ra tận phía xa
+Ground truth: hiện ra tận phía xa
+---------------
+Predict text: sinh được chân không phép
+Ground truth: xin được chân khuân vác
+---------------
+Predict text: nhưng khi tiến gần vào vấn thể thì mặt bị giang ở
+Ground truth: nhưng khi tiến gần vào vịnh thì mặt biển bị rạn vỡ
+---------------
+Predict text: một qua gặp trò hơi
+Ground truth: một bà ngoại giặt đồ thuê
+---------------
+Predict text: bao bàn tay em không được niềm mãi và
+Ground truth: đôi bàn tay em không được mềm mại và nõn nà
+---------------
+Predict text: tây giang vẫn còn khắp khỏi không thể vào xã nông
+Ground truth: tây giang vẫn còn khắc khoải không thể vào xã a nông
+---------------
+Predict text: những dự định cần phá được biến thành hiện thật
+Ground truth: những dự định cần phải được biến thành hiện thực
+---------------
+Predict text: ở tòa không phải cửa câu tao
+Ground truth: để tàu không phải cưỡi cầu tàu
+---------------
+Predict text: bàn chỗ sơn bằng bông miệng rất phổ biến
+Ground truth: bàn chổi sơn bằng bông mềm rất phổ biến
+---------------
+Predict text: thật sự ma la với lòng ngân thu
+Ground truth: thật sự mà là bởi lòng hận thù
+---------------
+Predict text: việc quy tội để một nỗ loại sách này là do
+Ground truth: việc quy tội để bùng nổ loại sách này là do
+---------------
+Predict text: di tích có bảy ông và hai phóng và được làm toàn vốn ít
+Ground truth: di tích có bảy phỗng ông và hai phỗng bà được làm bằng gỗ mít
+---------------
+Predict text: các chú cũng hỏi ấy phóng ở giữa trốn đông người hà không sợ
+Ground truth: các chú cũng thoải mái phóng uế giữa chốn đông người mà không sợ
+---------------
+Predict text: tiếng cặp làm còn lại cô nhận sách
+Ground truth: tiếng cọc cạch khựng lại của những khớp sắt
+---------------
+Predict text: người ta nói
+Ground truth: người ta nói
+---------------
+Predict text: cũng lên tiếng hộ cách kiến này
+Ground truth: cũng lên tiếng ủng hộ các kiến nghị này
+---------------
+Predict text: anh phú chưa cố được sữa mẹ lần nào
+Ground truth: anh phú chưa bú được sữa mẹ lần nào
+---------------
+Predict text: họ nữa đồng ở chung chung đông và phá vỡ qua bên
+Ground truth: ngọn lửa bạo động ở trung đông và phá vỡ lộ trình hòa bình
+---------------
+Predict text: và rất sáng tạo
+Ground truth: và rất sáng tạo
+---------------
+Predict text: nhưng giấc ngủ chậm
+Ground truth: nhưng giấc ngủ chập chờn
+---------------
+Predict text: giám đốc sở giáo dục đào ninh thuận cho biết
+Ground truth: giám đốc sở giáo dục đào tạo ninh thuận cho biết
+---------------
+Predict text: đèn bị hư ba
+Ground truth: đèn bị hư rồi ba
+---------------
+Predict text: trưởng công an xã trả sang cũng bị tiến đánh tiếp
+Ground truth: trưởng công an xã chạy sang can ngăn cũng bị tuyến đánh tiếp
+---------------
+Predict text: nghe chúng tôi hỏi đề này chị hát đơn ứng nước mắt
+Ground truth: nghe chúng tôi hỏi điều này chị ngát rân rấn nước mắt
+---------------
+Predict text: trong văn đề nghệ tính con xây dần cửa khẩu
+Ground truth: công văn đề nghị tỉnh con tum xây dựng cửa khẩu
+---------------
+Predict text: nhưng tình yêu vẫn nằm đen vào say đám như buổi ban đầu
+Ground truth: nhưng tình yêu vẫn nồng nàn và say đắm như buổi ban đầu
+---------------
+Predict text: do chính phủ vậy tiến hành ở việt nam
+Ground truth: do chính phủ mỹ tiến hành ở việt nam
+---------------
+Predict text: tỉnh quán chỉ đã phê
+Ground truth: tỉnh quảng trị đã phê duyệt
+---------------
+Predict text: nhưng tôi thích xem bộ phim chuyện phát ra sao chương trình này
+Ground truth: nhưng tôi thích xem bộ phim truyện phát ngay sau chương trình này
+---------------
+Predict text: cũng chưa biết
+Ground truth: cũng chưa biết nữa
+---------------
+Predict text: xuân này em không về
+Ground truth: xuân này em không về
+---------------
+Predict text: chắc có thôi xếp đi du lịch thôi
+Ground truth: chắc sắp tới thu xếp đi du lịch thôi
+---------------
+Predict text: nó trốn mất tiêu rồi còn
+Ground truth: nó trốn mất tiêu rồi còn đâu
+---------------
+Predict text: thằng đó có cái miệng như đàn bà
+Ground truth: thằng đó có cái miệng như đàn bà
+---------------
+Predict text: bà nói
+Ground truth: bà nói
+---------------
+Predict text: con nhỏ mở cái tươi hút đâu trên cổ
+Ground truth: con nhỏ mở cái túi gút đeo trên cổ
+---------------
+Predict text: cũng trang còn xuống chín cùng nó
+Ground truth: cũng chẳng còn xúng xính quần áo mới
+---------------
+Predict text: trang đâu có chứng vật
+Ground truth: trẻ em đâu có chướng ngại vật
+---------------
+Predict text: tôi không ở làm cô bé thật phòng
+Ground truth: tôi không nỡ làm cô bé thất vọng
+---------------
+Predict text: rất nhiều quy giống và kỳ vọng vô
+Ground truth: rất nhiều gửi gắm và kỳ vọng vào ông
+---------------
+Predict text: đăng thôi luận vì địa xúc
+Ground truth: đang thảo luận về đề xuất
+---------------
+Predict text: trước tình nước đã đánh đến kiểm tra chính độ thiết công
+Ground truth: chủ tịch nước đã đến kiểm tra tiến độ thi công
+---------------
+Predict text: nghĩa là kiếm cổ nông tính thay sơn
+Ground truth: nghĩa là kém cỏi nam tính hay sao
+---------------
+Predict text: một khu khách nguyễn cũng có chạy họ
+Ground truth: một cô gái váy ngắn cũn chạy lên hỏi
+---------------
+Predict text: xác không khiến bạn trong vậy như những trong một
+Ground truth: sẽ không khiến bạn trông gầy như những trang phục một màu
+---------------
+Predict text: khu chuyển mới vào lý nhạc bản bóng hai lần
+Ground truth: cô chỉ mới vào lưới nhặt bóng hai lần
+---------------
+Predict text: hoặc chiếc hiện bằng chất lúc lẫn có quốc
+Ground truth: hoặc chỉ biểu hiện bằng các rối loạn co bóp
+---------------
+Predict text: nhằm tạo sự hấp dẫn
+Ground truth: nhằm tạo ra sự hấp dẫn
+---------------
+Predict text: thứ ông thanh không chỉ cảm nhận bạn rất
+Ground truth: thứ âm thanh không chỉ cảm nhận bằng thính giác
+---------------
+Predict text: trường nổi của nên của một cô bé bị cho mẹ báo quên
+Ground truth: từ nỗi cô đơn của một cô bé bị cha mẹ bỏ quên
+---------------
+Predict text: chín bà cũng là người nông đấu niềm đâm mê sức của con gái
+Ground truth: chính bà cũng là người nung nấu niềm đam mê diễn xuất của cô con gái
+---------------
+Predict text: đó cũng là đồng luật thức để tôi
+Ground truth: đó cũng là động lực thúc đẩy tôi
+---------------
+Predict text: nhóm sinh viên tại trường học mặt ăn tức chung
+Ground truth: nhóm sinh viên tại trường cùng họp mặt ăn tết chung
+---------------
+Predict text: vì tới đó
+Ground truth: vì tối đó
+---------------
+Predict text: đất khi bọn cũng có thể làm những điều đó
+Ground truth: đôi khi bạn cũng có thể làm những điều đó
+---------------
+Predict text: gạch bầu
+Ground truth: rạch bàu mớp
+---------------
+Predict text: lý hoàn thân vào gương
+Ground truth: gí hòn than vào rơm
+---------------
+Predict text: cháu sống năng nào gặp suốt suốt đêm
+Ground truth: cháu sốt nên rẹo suốt đêm
+---------------
+Predict text: và tôi thấy qua luôn
+Ground truth: và tôi thấy hoa vạn thọ vàng ươm
+---------------
+Predict text: tay chia sức một tay giống chức quyền lẫn lớn
+Ground truth: tay kia xách một tay gióng mang chiếc vịm lớn
+---------------
+Predict text: bốn trang niệm không phù
+Ground truth: ngủ trên nệm không phù hợp
+---------------
+Predict text: những ngày đầu vào bóng ba cứ thư nghĩ
+Ground truth: những ngày đầu vắng bóng ba việt cứ thừ người nghĩ ngợi
+---------------
+Predict text: bị thúc cô gái bao viết
+Ground truth: bị các cô gái bao vây ráo riết
+---------------
+Predict text: cho tại giữa đồng cái nhìn phát công phải
+Ground truth: trơ trọi giữa đồng cái nhìn khắc khoải
+---------------
+Predict text: ngoài việc phát hiện cái thu
+Ground truth: ngoài việc phát hiện kẻ thù
+---------------
+Predict text: một giọt vệ tất cả các kim phòng
+Ground truth: một là gặp lại tất cả các em phò
+---------------
+Predict text: những sơ lầm khi đi trọng thích
+Ground truth: những sai lầm khi đi chọn khách sạn
+---------------
+Predict text: anh đi công tác cần thơ muốn việc
+Ground truth: anh đi công tác cần thơ tuần sau mới về
+---------------
+Predict text: có trở tiền cho bố không thì bỏ
+Ground truth: có trả tiền cho bố không thì bảo
+---------------
+Predict text: công sản là pháp còn chưa
+Ground truth: cam sành lột vỏ còn chua
+---------------
+Predict text: anh than em đẹp em chia anh già
+Ground truth: anh khen em đẹp em chê anh già
+---------------
+Predict text: những được tin này và cho tư gốc rất
+Ground truth: nhận được tin này gọi lại cho tôi gấp
+---------------
+Predict text: ba này chi quốc sắc
+Ground truth: ba này chỉ giỏi bốc phét
+---------------
+Predict text: cho tôi những đại tin nào cũng được
+Ground truth: cho tôi nhắn đại tin nào cũng được
+---------------
+Predict text: hãy tự từng rằng bàn là đất dự an trong một công ty lớn
+Ground truth: hãy tưởng tượng rằng bạn là là giám đốc dự án trong một công ty lớn
+---------------
+Predict text: của những thế lập hùng mạnh
+Ground truth: của những thế lực hùng mạnh
+---------------
+Predict text: ông nói lên
+Ground truth: ông nhặt nó lên
+---------------
+Predict text: nguyên thứ tưởng may văn đã bị bắt
+Ground truth: nguyên thứ trưởng mai văn dâu đã bị bắt
+---------------
+Predict text: nhưng mức ăn tự hình đối với các vì cao là tương ứng
+Ground truth: nhưng mức án tử hình đối với các bị cáo là tương xứng
+---------------
+Predict text: những người sống thì khai thẳng trong nhà ngoài nó
+Ground truth: những người sống thì tha thẩn trong nhà ngoài ngõ
+---------------
+Predict text: cả không gian hướng màu cho biết
+Ground truth: cả không gian nhuốm màu tro bếp
+---------------
+Predict text: trạng do
+Ground truth: trán
+---------------
+Predict text: thu chậm nhỏ rất hiện
+Ground truth: thu chạm ngõ rất hiền
+---------------
+Predict text: trong một cô nàng độ người lên anh người yêu
+Ground truth: trông một cô nàng đổ người lên lưng anh người yêu gầy còm
+---------------
+Predict text: doanh nghiệp tuyển dụng lao động nước ngoài
+Ground truth: doanh nghiệp tuyển dụng lao động nước ngoài
+---------------
+Predict text: thời hạn sử dụng và lại sản phẩm
+Ground truth: thời hạn sử dụng và loại sản phẩm bột
+---------------
+Predict text: mà còn bị những bộ mặt tây kia thành huyện
+Ground truth: mà còn bị những bộ mặt lạnh kia
+---------------
+Predict text: nhưng mùi hôi vẫn sau vào tầng
+Ground truth: nhưng mùi hôi vẫn xộc vào tận óc
+---------------
+Predict text: đang làm việc không ngừng nghĩ
+Ground truth: đang làm việc không ngừng nghỉ
+---------------
+Predict text: thu hút rất là nhiều loài chim
+Ground truth: thu hút rất là nhiều loài chim
+---------------
+Predict text: khi cô thể hiện không mấy thành công ở lễ khai mạch
+Ground truth: khi cô thể hiện không mấy thành công ở lễ khai mạc
+---------------
+Predict text: ra hiệu cho tôi im lặng
+Ground truth: ra hiệu cho tôi im lặng
+---------------
+Predict text: nhỏ đưa tay ra hết vùng khô trên cổ
+Ground truth: nhỏ đưa tay ra cào hết bùn khô trên cổ tớ
+---------------
+Predict text: ngồi chồng cách chỉ mấy nét
+Ground truth: ngồi chồm chồm cách chỉ mấy mét
+---------------
+Predict text: nửa vòng trái đất năm năm
+Ground truth: nửa vòng trái đất hơn bảy năm
+---------------
+Predict text: chậm năm bắt xu phải tiến công nghệ mới
+Ground truth: chậm nắm bắt xu hướng phát triển công nghệ mới
+---------------
+Predict text: mà ơn tượng ra hình bóng mẹ
+Ground truth: mà mường tượng ra hình bóng mẹ
+---------------
+Predict text: mỗi người một số phận nghe này
+Ground truth: mỗi người một số phận em à
+---------------
+Predict text: lần nữa mãi mới gặp được tin
+Ground truth: lần lữa mãi mới gặp được tuyên
+---------------
+Predict text: làm đường dây để nói các mảnh đời
+Ground truth: làm đường dây để nối các mảnh đời
+---------------
+Predict text: chị hai chủ quán nghe bàn tán lạ cũng ra góc chuyện
+Ground truth: chị hai chủ quán nghe bàn tán rả cũng ra góp chuyện
+---------------
+Predict text: tất gặp về kẻ mọi người thứ trở lại thời hoang
+Ground truth: tức khắc về kéo mọi người thứ trở lại thời hoang sơ
+---------------
+Predict text: tên gọi tại tài địa phương là cách khối
+Ground truth: tên gọi tại địa phương là trắc thối
+---------------
+Predict text: bốn chiếc trống đại
+Ground truth: bốn chiếc trống đại la
+---------------
+Predict text: một cuốn hoạch không chứng sát
+Ground truth: một cú ngoặt không chính xác
+---------------
+Predict text: mới đây nhất là các tiểu quá lập thống nhất
+Ground truth: mới đây nhất là các tiểu vương quốc ả rập thống nhất
+---------------
+Predict text: trẻ đồng người may toán học trên toàn thế giới
+Ground truth: cộng đồng người mê toán học trên toàn thế giới
+---------------
+Predict text: tôi nghĩ thủ tướng sẽ không lẽ căn bất cứ câu hỏi nào
+Ground truth: tôi nghĩ thủ tướng sẽ không né tránh bất cứ câu hỏi nào
+---------------
+Predict text: bọn buông ma túy và vụ khí
+Ground truth: bọn buôn lậu ma túy và vũ khí
+---------------
+Predict text: lại quay ra tập viết báo rồi gửi
+Ground truth: lại quay ra tập viết báo rồi gửi vu vơ
+---------------
+Predict text: nghe tiếng sạch xa thì đáng chúng pháp lại hút hành cầu
+Ground truth: nghe tiếng xa xa thì đoán trúng phóc là hút hầm cầu
+---------------
+Predict text: chưa thấy rực
+Ground truth: chưa rục rịch gì
+---------------
+Predict text: thế nhưng khi giả thế giới cao dần dần
+Ground truth: thế nhưng khi giá thép thế giới cao dần
+---------------
+Predict text: làm các các thiết bị của tên lửa
+Ground truth: làm hỏng các thiết bị của tên lửa
+---------------
+Predict text: đơn giản là tán nhau
+Ground truth: đơn giản là tán gẫu với nhau
+---------------
+Predict text: mà do lối sống
+Ground truth: mà do lối sống chui của chúng
+---------------
+Predict text: rau kia đã ba ngày không
+Ground truth: râu ria đã ba ngày không cạo
+---------------
+Predict text: một đường hướng chuyên nghiệp
+Ground truth: một đường hướng chuyên nghiệp
+---------------
+Predict text: đến cứu hỏa khó tiếp cận
+Ground truth: lính cứu hỏa khó tiếp cận hiện trường
+---------------
+Predict text: những người trên của công an đã nhóm thẳng vào quốc gia anh chủ
+Ground truth: những người trên ghe của công an đã nhắm thẳng vào ghe anh chủ
+---------------
+Predict text: đừng buồn vì tự rằng bạc nên nữa
+Ground truth: đừng buồn vì tự vặt mình nữa
+---------------
+Predict text: và hết vào mỗi lần chắc này lẫn ra
+Ground truth: và hít vào mũi làm chất này loãng ra
+---------------
+Predict text: đang hấp dẫn các tập đoàn phân đa quốc gia
+Ground truth: đang hấp dẫn các tập đoàn phân phối đa quốc gia
+---------------
+Predict text: dù là đầu sức mạnh hoặc bông lông
+Ground truth: dù là đậu sức mạnh hoặc cải bông khủng long
+---------------
+Predict text: vì nó không nhất đến những cuộc tấn công phải những bà người do thái
+Ground truth: vì nó không nhắc đến những cuộc tấn công nhắm vào người do thái
+---------------
+Predict text: rồi thì cà đôi câu cổ với chân chuột
+Ground truth: rồi đôi câu vọng cổ với chân chuột
+---------------
+Predict text: ở lớp nấu ăn ra đình
+Ground truth: ở lớp nấu ăn gia đình
+---------------
+Predict text: mà bạn có thể tham để làm đẹp giang bếp
+Ground truth: mà bạn có thể tham khảo để làm đẹp gian bếp
+---------------
+Predict text: cái vị chết bà có nghĩa nhất của nguyên nguyên chết
+Ground truth: cái vị chát chát và đắng ngắt của cà phê nguyên chất
+---------------
+Predict text: các em nhỏ sẽ không còn phải đi trên những chiến đoàn quy hiểm
+Ground truth: các em nhỏ sẽ không còn phải đi trên những chuyến đò nguy hiểm
+---------------
+Predict text: làm cô nàng rõ đây thức trắng cả đêm
+Ground truth: làm cô nàng thức trắng cả đêm
+---------------
+Predict text: giải quyết khối nhỏ này phải cần đến một cuộc đại thủ nghiêm tốt
+Ground truth: giải quyết khối ung nhọt này phải cần đến một cuộc đại phẫu nghiêm túc
+---------------
+Predict text: thậm chí càng giống áo quý nàng đàn
+Ground truth: thậm chí càng giống áo quí nàng càng mốt
+---------------
+Predict text: còn bộ khăn từ điểm
+Ground truth: còn bộ khang hi từ điển
+---------------
+Predict text: đôi môi mẹ sau nó mấy một lời ca hoang
+Ground truth: đôi môi mẹ son máy một lời ca hoang
+---------------
+Predict text: số khác suy đón rằng anh ta hình động tâm vậy
+Ground truth: số khác suy đoán rằng anh ta hành động ác tâm vậy
+---------------
+Predict text: làm khuôn
+Ground truth: làm khung
+---------------
+Predict text: hoặc bạn sẽ đến đấy với một tâm trạng trắng vô cùng
+Ground truth: hoặc bạn sẽ đến đấy với một tâm trạng chán ngán vô cùng
+---------------
+Predict text: phải được thực hiện trên cơ sở
+Ground truth: phải được thực hiện trên cơ sở
+---------------
+Predict text: hai mươi sáu hai mươi bảy
+Ground truth: hai mươi sáu hai mươi bảy
+---------------
+Predict text: ba mươi ba mươi mốt
+Ground truth: ba mươi ba mươi mốt
+---------------
+Predict text: năm mươi năm mươi mốt
+Ground truth: năm mươi năm mươi mốt
+---------------
+Predict text: tám mươi sáu tám mươi bảy
+Ground truth: tám mươi sáu tám mươi bảy
+---------------
+Predict text: tám mươi tám tám mươi chín
+Ground truth: tám mươi tám tám mươi chín
+---------------
+Predict text: một trăm một hai ba
+Ground truth: một trăm một hai ba
+---------------
+Predict text: một ba năm bảy chín
+Ground truth: một ba năm bảy chín
+---------------
+Predict text: nói trước bước không còn
+Ground truth: nói trước bước không qua
+---------------
+Predict text: chẳng là mấy hôm nay tôi đau quá
+Ground truth: chẳng là mấy hôm nay tôi đau bụng quá
+---------------
+Predict text: sau kết quả ra tệ vậy
+Ground truth: sao kết quả ra tệ vậy
+---------------
+Predict text: tôi tuyển muốn xem những động hay mà thôi
+Ground truth: tôi chỉ muốn xem những đoạn hay mà thôi
+---------------
+Predict text: công ty trách nhiệm hữu hạn an vốn
+Ground truth: công ty trách nhiệm hữu hạn ăn uống
+---------------
+Predict text: phía chuyển giao công nghệ là ba chục ngàn đồng
+Ground truth: phí chuyển giao công nghệ là ba chục ngàn đồng
+---------------
+Predict text: lương ba ba đồng thì nuôi được ai
+Ground truth: lương ba cọc ba đồng thì nuôi được ai
+---------------
+Predict text: cô ấy đã quá kém
+Ground truth: cô ấy đã quá chén
+---------------
+Predict text: hàng năm chúng ra thể ra hàng tỉ bị tử
+Ground truth: hằng năm chúng ta thải ra hàng tỉ thiết bị điện tử
+---------------
+Predict text: cho những chiến giữa ngoại của chúa khách
+Ground truth: cho những chuyến dã ngoại của du khách
+---------------
+Predict text: những việc điểm của mình
+Ground truth: những nhược điểm của mình
+---------------
+Predict text: vị đó mới chính là thứ bạn cần
+Ground truth: vì đó mới chính là thứ bạn cần
+---------------
+Predict text: có trời không thể không thúc vào khai khai trung
+Ground truth: gió trời không thể thông thổi vào khai trung
+---------------
+Predict text: bởi cô qua chuyên môn hoặc thuê của chức kiểm toán độc lập
+Ground truth: bởi cơ quan chuyên môn hoặc thuê tổ chức kiểm toán độc lập
+---------------
+Predict text: hoặc cho vào quả mũi để lẫn ăn dần dần
+Ground truth: hoặc cho vào muối để lợn ăn dần
+---------------
+Predict text: cứ chỉnh kết đầu có cây là một chỗ
+Ground truth: cứ chụm các đầu ngón tay lại một chỗ
+---------------
+Predict text: đã có dự án để suy dựng một cái cầu từ đất liền
+Ground truth: đã có dự án để xây dựng một cái cầu từ đất liền
+---------------
+Predict text: trạm vào phần khớp mềm trên đầu bé
+Ground truth: chạm vào phần thóp mềm trên đầu bé
+---------------
+Predict text: thì bỗng nghe tiếng áp từ vật rừng phi lao
+Ground truth: thì bỗng nghe thấy tiếng từ vạt rừng phi lao
+---------------
+Predict text: phục vụ cho mùa thi đại học đang đến sách xem
+Ground truth: phục vụ cho mùa thi đại học đang đến sát sạt
+---------------
+Predict text: trận chiến sách bất thể
+Ground truth: trận chiến xích bích
+---------------
+Predict text: nguyên thứ trưởng bộ đề học và giáo dụng chuyên nghiệp của
+Ground truth: nguyên thứ trưởng bộ đại học và giáo dục chuyên nghiệp cũ
+---------------
+Predict text: vào cơ quan là anh khóc giống hẹp với luật yêu vậy
+Ground truth: vào cơ quan là anh hót giống hệt mới lột lưỡi vậy
+---------------
+Predict text: cán trình đã ngoại mưa
+Ground truth: chừng đã ngoại bảy mươi
+---------------
+Predict text: có hai tết dụng tích cực
+Ground truth: có hai tác dụng tích cực
+---------------
+Predict text: tham gia giảng dạy là luật lượng bằng viên
+Ground truth: tham gia giảng dạy là lực lượng đoàn viên
+---------------
+Predict text: đó hẳn thẳng là một món quà
+Ground truth: đó hẳn là một món quà
+---------------
+Predict text: và khi thấy tôi vẫn kiên định trả lời trước quốc
+Ground truth: và khi thấy tôi vẫn kiên định trả lời
+---------------
+Predict text: rơi thông minh
+Ground truth: rô bót thông minh
+---------------
+Predict text: đầu tiên là bà con mình vật quá làm an
+Ground truth: đầu tiên là bà con mình vật vã làm ăn
+---------------
+Predict text: mà cho đến lúc đó được xem là của cơ nhân
+Ground truth: mà cho đến lúc đó được xem là của tư nhân
+---------------
+Predict text: như lần này được đến món giờ thủ hoàn làm từ tay theo
+Ground truth: như lần này được nếm món giò thủ hoàn toàn làm từ tai heo
+---------------
+Predict text: những người hoàn nghi nói rằng giữa được trao mãn trên người
+Ground truth: những người hoài nghi nói rằng giữ được vật treo lủng lẳng trên người
+---------------
+Predict text: chiếu chiếc gọi tình mẹ con sung họp
+Ground truth: chít gợi tình mẹ con sum họp
+---------------
+Predict text: nơi có mấy tên trong rất
+Ground truth: nơi có mấy tên trông rất gấu
+---------------
+Predict text: nhiều người cho biết
+Ground truth: nhiều người cho biết
+---------------
+Predict text: nhiều chủ đá di tích nằm nghiêm ngã vào vở
+Ground truth: nhiều trụ đá di tích nằm nghiêng ngả và vỡ nát
+---------------
+Predict text: họ cũng luôn tránh tránh xa những tình có thể gây hạ cho họ
+Ground truth: họ cũng luôn tránh xa những tình huống có thể gây hại cho họ
+---------------
+Predict text: trong cuộc sống của tôi chúng không dùng để kiếm ra lợi
+Ground truth: trong cuộc sống của tôi chúng không dùng để kiếm ra lợi nhuận
+---------------
+Predict text: anh yêu bốn mươi lăm
+Ground truth: hai mươi bốn hai mươi lăm
+---------------
+Predict text: hai mươi tám hai mươi chín
+Ground truth: hai mươi tám hai mươi chín
+---------------
+Predict text: năm mỹ hay năm mươi ba
+Ground truth: năm mươi hai năm mươi ba
+---------------
+Predict text: sở tám sáu mươi chín
+Ground truth: sáu mươi tám sáu mươi chín
+---------------
+Predict text: bảy mươi tám bảy mươi chín
+Ground truth: bảy mươi tám bảy mươi chín
+---------------
+Predict text: chín mươi tám chín mươi chín
+Ground truth: chín mươi tám chín mươi chín
+---------------
+Predict text: buổi sáng thành phố ô nhiễm hơn buổi trưa
+Ground truth: buổi sáng thành phố ô nhiễm hơn buổi trưa
+---------------
+Predict text: đóng dựng tôi đã nâng mà anh
+Ground truth: nóng giận tôi đã lăng mạ anh
+---------------
+Predict text: chủ tàu cho biết sẽ tiếp tục thương về số chi phí này
+Ground truth: chủ tàu cho biết sẽ tiếp tục thương thuyết về số chi phí này
+---------------
+Predict text: định để con sau ăn
+Ground truth: đừng để con sâu ăn
+---------------
+Predict text: cây cổ thụ ấy bất chợt bị bệnh tật ngã
+Ground truth: cây cổ thụ ấy bất chợt bị bệnh tật quật ngã
+---------------
+Predict text: và nếu bạn tốt làm lòng sổ mà hình
+Ground truth: và nếu bạn trót làm lộn xộn màn hình nền
+---------------
+Predict text: đầu diễn kể này có nhiều điều ngắm lợi về nghề
+Ground truth: đạo diễn trẻ này có nhiều điều ngẫm ngợi về nghề
+---------------
+Predict text: sẽ không khiến bạn trong về như những căn phục màu
+Ground truth: sẽ không khiến bạn trông gầy như những trang phục một màu
+---------------
+Predict text: bởi cơ quan kim hoặc thuê tổ chức kiểm toán độc
+Ground truth: bởi cơ quan chuyên môn hoặc thuê tổ chức kiểm toán độc lập
+---------------
+Predict text: nó lập đạp chiếc xe cà toàn băng ngay ra đầu đường
+Ground truth: nó lật đật đạp chiếc xe cà tàng băng ngay ra đầu đường
+---------------
+Predict text: hoặc chỉ hiện bàn các đôi lòng có
+Ground truth: hoặc chỉ biểu hiện bằng các rối loạn co bóp
+---------------
+Predict text: khi tôi là không bé bốn thì kia bỏ cao quá nhà
+Ground truth: khi tôi là con bé lớp bốn thì cây vả đã cao quá nóc nhà
+---------------
+Predict text: mũi đầu khóc than hay theo đổi chân trình học
+Ground truth: buổi đầu thật khó khăn theo đuổi chương trình học
+---------------
+Predict text: việc đưa tính hiểu tiền hình tiếp bằng hệ thống cấp quan
+Ground truth: việc đưa tín hiệu truyền hình trực tiếp bằng hệ thống cáp quang
+---------------
+Predict text: vì không quá tiền nóng học phí
+Ground truth: vì không có tiền đóng học phí
+---------------
+Predict text: thị nghe nghe mấy tiếng tự vật rừng phi lao
+Ground truth: thì bỗng nghe mấy tiếng từ vạt rừng phi lao
+---------------
+Predict text: hai đám bão làng nghề nào chúng cũng được đi những đôi tất
+Ground truth: hay đảm bảo rằng ngày nào chúng cũng được đi những đôi tất sạch
+---------------
+Predict text: về việc mang đến trách em niềm vui học
+Ground truth: về việc mang đến cho các em niềm vui học
+---------------
+Predict text: có lẽ mắc nhiều thời gian
+Ground truth: có lẽ phải mất nhiều thời gian
+---------------
+Predict text: nước trên chiếc đồng hồ đối bắt lên màu gỗ
+Ground truth: nước gỗ trên chiếc đồng hồ đã bắt lên màu bóng
+---------------
+Predict text: khi sức biến mất chúng cơ lại tình trạng mềm dễ bình hơn
+Ground truth: khi sức ép biến mất chúng trở lại tình trạng mềm dẻo bình thường
+---------------
+Predict text: khám gia sẽ giải là luật động viên
+Ground truth: tham gia giảng dạy là lực lượng đoàn viên
+---------------
+Predict text: và phải hoạt có nhiều màu
+Ground truth: và vải hoặc nhiều màu
+---------------
+Predict text: với người mẹ ở trà long viên
+Ground truth: với người mẹ ở xóm chài long biên
+---------------
+Predict text: chương trình đã tạo được ứng tốt từ phía giải
+Ground truth: chương trình đã tạo được hiệu ứng tốt từ phía khán giả nhí
+---------------
+Predict text: dịch vụ kiến ra sức quản đừng kỳ là mỗi ý kiến hay
+Ground truth: dịch vụ kiểm tra sức khỏe định kỳ là một ý kiến hay
+---------------
+Predict text: chính xử lên ở đó
+Ground truth: chính sự lên sàn ồ ạt đó
+---------------
+Predict text: kết quả chỉ có một viện ba người còn quyết
+Ground truth: kết quả chỉ có vỏn vẹn ba người còn biết dệt
+---------------
+Predict text: và tương đối có hiệu quả
+Ground truth: là tương đối có hiệu quả
+---------------
+Predict text: phần lớn học sinh do có người nước ngoài
+Ground truth: phần lớn học sinh giàu có người nước ngoài
+---------------
+Predict text: không một hai ba bốn
+Ground truth: không một hai ba bốn
+---------------
+Predict text: hay hay quy ba
+Ground truth: hai mươi hai hai mươi ba
+---------------
+Predict text: hay giáo hay bảy
+Ground truth: hai mươi sáu hai mươi bảy
+---------------
+Predict text: muốn ba mươi lăm
+Ground truth: ba mươi bốn ba mươi lăm
+---------------
+Predict text: năm mươi năm mươi mốt
+Ground truth: năm mươi năm mươi mốt
+---------------
+Predict text: mới vốn năm mươi lăm
+Ground truth: năm mươi bốn năm mươi lăm
+---------------
+Predict text: bảy mươi bảy mươi ba
+Ground truth: bảy mươi hai bảy mươi ba
+---------------
+Predict text: nói thật ra
+Ground truth: nói thật đấy à
+---------------
+Predict text: quá tốt rồi
+Ground truth: quá tốt rồi
+---------------
+Predict text: tôi chết cùng với em
+Ground truth: tôi chết cùng với ánh trăng
+---------------
+Predict text: đã ông ấy thứ để buồn
+Ground truth: đàn ông có hai thứ để buồn
+---------------
+Predict text: chào đó bạn sang đó vợ
+Ground truth: giàu đổi bạn sang đổi vợ
+---------------
+Predict text: em mạng trên to tàu cấp hành
+Ground truth: án mạng trên toa tàu tốc hành
+---------------
+Predict text: làm việc trở bị may lâu ít sức
+Ground truth: làm rợp biển mây lau lách phất phơ
+---------------
+Predict text: chúng ngủ các hơi dân
+Ground truth: trứng mực quyến rũ các ngư dân
+---------------
+Predict text: bạn có thể hiện trách người nói xe
+Ground truth: bạn có thể khiển trách người lái xe
+---------------
+Predict text: lớn hơn trả lông thắng thắng bụng vui
+Ground truth: thoáng trăn trở thoáng buồn vui
+---------------
+Predict text: hồn phòng trà yêu vụ tính và có xây đó
+Ground truth: phòng trà khiêu vũ cánh quạt cối xay đỏ
+---------------
+Predict text: thịt ngọt lấy lại mang trồng sáng
+Ground truth: thịt ngọt lừ ấy lại mang theo trùng gây bệnh
+---------------
+Predict text: hiện trong nhiều lại tội mặc cho thị trường
+Ground truth: hiện trong nhiều loại tỏi có mặt trên thị trường
+---------------
+Predict text: ngày căn bắt hai chỉ ai chứng lần trong một thế kỷ
+Ground truth: ngày căn bậc hai chỉ diễn ra chín lần trong một thế kỷ
+---------------
+Predict text: rồi hồ hôn thân hình ngắn
+Ground truth: rồi rơm rạ khô theo thân hình gầy
+---------------
+Predict text: để khó thể phân hành cho được quả hơn
+Ground truth: để có thể vận hành chúng được hiệu quả hơn
+---------------
+Predict text: được mỹ quyết tung ra
+Ground truth: được mỹ ráo riết tung ra
+---------------
+Predict text: vì luận ca khúc mới quá nhiều
+Ground truth: vì lượng ca khúc mới quá nhiều
+---------------
+Predict text: nước chảy quá mạnh
+Ground truth: nước chảy quá mạnh
+---------------
+Predict text: khiến các hai phải nhận vô lý
+Ground truth: khiến cả hai phải giận hờn vô lý
+---------------
+Predict text: rồi chuyện các một thời gian
+Ground truth: rồi chìm một thời gian
+---------------
+Predict text: khi mạng vẫn nhận bầu của quốc quan
+Ground truth: khi miệng vẫn ngậm bầu vú queo
+---------------
+Predict text: câu trả của ông tăng rất hiếm ngã
+Ground truth: câu trả lời của ông ta rất khiếm nhã
+---------------
+Predict text: nếu chủ đầu tư không tự phá giả thì bị tưởng chế
+Ground truth: nếu chủ đầu tư không tự phá dỡ thì bị cưỡng chế
+---------------
+Predict text: về chuyện đa thời giỏi bọn đẹp nước ngoài
+Ground truth: về chuyện đang theo dõi bọn gián điệp nước ngoài
+---------------
+Predict text: được cắt từ bỏ chân bộ đội cụ các ông bố ra
+Ground truth: được cắt từ vỏ chăn bộ đội cũ của các ông bố ra
+---------------
+Predict text: sản nhất là một môi sát đồng đoàn trên núi
+Ground truth: sợ nhất là mùa mưa sấm sét đùng đoàng trên núi
+---------------
+Predict text: tất lấy làm từ nơi không phải chiều lực và nơi
+Ground truth: tức lấy sụn lành từ nơi không phải chịu lực ghép vào nơi hư
+---------------
+Predict text: điều cùng quan trọng trong thời đại có như mặt động
+Ground truth: điều vô cùng quan trọng trong thời đại có quá nhiều hoạt động
+---------------
+Predict text: thí sinh tự do còn quan tâm đến độ bên kiến thức các môn
+Ground truth: thí sinh tự do cần quan tâm đến độ vênh kiến thức các môn
+---------------
+Predict text: mọi người chúng ta sẽ khó nhận thứ khác nhau
+Ground truth: mỗi người chúng ta sẽ có những thứ khác nhau
+---------------
+Predict text: bà thậm khi bạn cũng không nên cố gắng
+Ground truth: và thậm chí bạn cũng không nên cố gắng
+---------------
+Predict text: trên bộ trẻ ánh sáng phần hoặc
+Ground truth: trên bầu trời ánh trăng sáng vằng vặc
+---------------
+Predict text: là cậu tiên của ông bạn lên đảm chắc việc dẫn đường
+Ground truth: là tổ tiên của ông đặng lên đảm trách việc dẫn đường
+---------------
+Predict text: tám chín mười mười một
+Ground truth: tám chín mười mười một
+---------------
+Predict text: từ một bảy mươi ba
+Ground truth: mười một mười hai mười ba
+---------------
+Predict text: năm mươi năm mươi mốt
+Ground truth: năm mươi năm mươi mốt
+---------------
+Predict text: mời cảm chính mình chính
+Ground truth: chín mươi tám chín mươi chín
+---------------
+Predict text: căn nhà đàn khi ở cố ma
+Ground truth: căn nhà đằng kia nghe nói có ma
+---------------
+Predict text: thủ thực thu cần chơi gái
+Ground truth: thú thật tui chưa từng chơi gái
+---------------
+Predict text: sung này em không về
+Ground truth: xuân này em không về
+---------------
+Predict text: khó có hơn không
+Ground truth: có còn hơn không
+---------------
+Predict text: các sạch tới thu xếp đi nhiều gặp thôi
+Ground truth: chắc sắp tới thu xếp đi du lịch thôi
+---------------
+Predict text: phương trong sống của tôi làm người không quyền mạnh cho đất việt
+Ground truth: phương châm sống của tôi là người không vì mình trời tru đất diệt
+---------------
+Predict text: nó chủ mất tiên vào còn
+Ground truth: nó trốn mất tiêu rồi còn đâu
+---------------
+Predict text: thế nào là hoàn thẳng
+Ground truth: thế nào là hoàn hảo
+---------------
+Predict text: thì bị công an thật cổ ảnh cách
+Ground truth: khi bị công an cổ khẩn cấp
+---------------
+Predict text: sau thì đọc những thông tin trên báo
+Ground truth: sau khi đọc những thông tin trên báo
+---------------
+Predict text: nga thì ấy càng nhìn nói nga
+Ground truth: nga khi ấy càng nết na
+---------------
+Predict text: việc áp dụng cả bàn vai hỏi và không cụ quán
+Ground truth: việc áp dụng cả bàn vá lỗi và công cụ quét
+---------------
+Predict text: ngoài trời mưa tứ là các hạt
+Ground truth: ngoài trời mưa cứ lay rắc hạt
+---------------
+Predict text: người mua hình tin quà ngồi cả ra kinh hoàng với đây uống hình
+Ground truth: nuôi mô hình tinh hoàn rồi tạo ra tinh hoàn với đầy đủ hình hài
+---------------
+Predict text: có thể giúp ta tao quên những nói khu vực
+Ground truth: có thể giúp ta quên đi những nỗi ưu phiền
+---------------
+Predict text: mà dung gian nhé tâm đất trà trời
+Ground truth: mà dung nhé cầm tay đất trời
+---------------
+Predict text: tôi hơn trong sự trẻ làm cũng người mẹ kế
+Ground truth: tôi lớn lên trong sự ghẻ lạnh của người mẹ kế
+---------------
+Predict text: không hoàn trên không
+Ground truth: khung răng hàm trên khum
+---------------
+Predict text: hay nhưng tôi không có thận khi trả hành tán nữ
+Ground truth: thế nhưng tôi không ân hận khi trở thành đả nữ
+---------------
+Predict text: với một cách độ mà chúng ta không thể gây đến cảnh công nó
+Ground truth: với một tốc độ mà chúng ta không thể đi đến tận cùng của nó
+---------------
+Predict text: tôi thấy lòng luôn của mình anh gọi ứng nguyên
+Ground truth: tôi thấy đồng lương của mình năm năm rồi vẫn đứng nguyên
+---------------
+Predict text: vậy cảm nhận bảo hàng trong giai
+Ground truth: để chấm dứt nạn bạo hành trong gia đình
+---------------
+Predict text: làm lượng sáng ngập quanh thuốc tháng
+Ground truth: làm đường sá ngập quanh năm suốt tháng
+---------------
+Predict text: vừa cao trạm chậm ở ngàn nói
+Ground truth: vừa được trao tặng giải thưởng nhà nước
+---------------
+Predict text: cái khối
+Ground truth: cái khó là
+---------------
+Predict text: điều ngày lúc với mọi cấp đầu và trong mọi ảnh vật của là sống
+Ground truth: điều này đúng với mọi cấp độ và trong mọi lĩnh vực của đời sống
+---------------
+Predict text: cao lòng lòng
+Ground truth: cao
+---------------
+Predict text: chàng trai đập con bò dậy hoặc mà xanh như tao chú
+Ground truth: chàng trai lồm cồm bò dậy mặt mày xanh lét như tàu lá chuối
+---------------
+Predict text: chính phủ lòng thời cũng gặp thêm cột xúc tiến tiêu hầu cỏ
+Ground truth: chính phủ đồng thời cũng lập thêm cục xúc tiến tiêu thụ dầu cọ
+---------------
+Predict text: cũng là kinh vui cho các cả những ai
+Ground truth: cũng là tin vui cho tất cả những ai
+---------------
+Predict text: thuận đã còn phải dẫn
+Ground truth: đã còn phải điều chỉnh
+---------------
+Predict text: trong tình thấy ấy trẻ chỉ lắm trẻ về song
+Ground truth: trong tình thế ấy chỉ đám trẻ ven sông
+---------------
+Predict text: vì tết nhà càng
+Ground truth: nếu đi tiếp nha trang
+---------------
+Predict text: tức trang có thể bệnh
+Ground truth: tức chanh có thể trị được bệnh
+---------------
+Predict text: chỉ muốn làm một hơi thả tay miệng miệng miệng
+Ground truth: chỉ muốn làm một hơi cho đã cái miệng
+---------------
+Predict text: hàng mỹ tám ngày mươi chín
+Ground truth: hai mươi tám hai mươi chín
+---------------
+Predict text: bà mười ba mươi mốt
+Ground truth: ba mươi ba mươi mốt
+---------------
+Predict text: xã mười xã miền móc
+Ground truth: sáu mươi sáu mươi mốt
+---------------
+Predict text: bảy mươi bốn bảy mươi lăm
+Ground truth: bảy mươi bốn bảy mươi lăm
+---------------
+Predict text: tám mươi bốn tám mươi lăm
+Ground truth: tám mươi bốn tám mươi lăm
+---------------
+Predict text: chính mươi sáu chín mươi bảy
+Ground truth: chín mươi sáu chín mươi bảy
+---------------
+Predict text: một trăm một thay ba
+Ground truth: một trăm một hai ba
+---------------
+Predict text: hồng hệ bốn sáu
+Ground truth: không hai bốn sáu tám
+---------------
+Predict text: thì hắn ngày ba nhiêu
+Ground truth: tiền điện tháng này bao nhiêu
+---------------
+Predict text: khu xe cập nhà cao
+Ground truth: thua xa tiệm tạp hoá nhà tao
+---------------
+Predict text: từ trên nó ngàn nhìn xuống có hát
+Ground truth: từ trên nóc nhà nhìn xuống có khác
+---------------
+Predict text: cậu nghiệp đứa nhỏ không ai chăm sóc
+Ground truth: tội nghiệp đứa nhỏ không ai chăm sóc
+---------------
+Predict text: em sợ có một ngày anh gặp người con gái khác có phân em bỏ em
+Ground truth: em sợ có một ngày anh gặp người con gái khác tốt hơn em rồi anh bỏ em
+---------------
+Predict text: nữ vì sinh đẹp phạm băng
+Ground truth: nữ diễn viên xinh đẹp phạm băng băng
+---------------
+Predict text: sẽ làm tình trạng nói của kẻ
+Ground truth: sẽ làm giảm tình trạng ói ọc của trẻ
+---------------
+Predict text: mà phải chờ giải ở tạm bên học nhà cha ruột
+Ground truth: mà phải che chái ở tạm bên hông nhà cha ruột
+---------------
+Predict text: tôi có thể cầm thứ
+Ground truth: tôi có thể căm giận đủ thứ
+---------------
+Predict text: mà phải chuyển qua hành thức giao dịch
+Ground truth: mà phải chuyển qua hình thức giao dịch
+---------------
+Predict text: đừng bao giờ để cho bất kỳ ai nói với bạn rằng
+Ground truth: đừng bao giờ để cho bất kỳ ai nói với bạn rằng
+---------------
+Predict text: vàng ông đồ gặp câu cổ
+Ground truth: vàng óng đôi cao cổ của ngự lâm quân
+---------------
+Predict text: nếu vì chúng tôi
+Ground truth: nếu vì chúng tôi
+---------------
+Predict text: nếu bạn khoảng cảm thay tội lỗi
+Ground truth: nếu bạn vẫn cảm thấy tội lỗi
+---------------
+Predict text: giải dầu ăn sáu trường sơn
+Ground truth: dầu nắng gió trường sơn
+---------------
+Predict text: với trên là núi và dưới là xong
+Ground truth: với trên là núi và dưới là sông
+---------------
+Predict text: với sự xuất hiện của bà chồng
+Ground truth: với sự xuất hiện của quái thú và rồng
+---------------
+Predict text: nét mặt họ không ngồi lên hạnh phúc của người mẹ
+Ground truth: nét mặt họ không lên hạnh phúc của người mẹ
+---------------
+Predict text: một số người cho rằng
+Ground truth: một số người cho rằng
+---------------
+Predict text: một sinh viên được vay vốn tính dụng học tập
+Ground truth: một sinh viên được vay vốn tín dụng học tập
+---------------
+Predict text: mọi thứ đều được một sẽ lại
+Ground truth: mọi thứ đều được mổ xẻ lại
+---------------
+Predict text: không phải không cùng
+Ground truth: không phải nắp khum
+---------------
+Predict text: các công ty dù lập phải xác định
+Ground truth: các công ty du lịch phải xác định
+---------------
+Predict text: đi bỏ đang nuôi đến nhiều chân
+Ground truth: đi bộ leo núi đến chân
+---------------
+Predict text: thì chủ đầu tư phải tự phá giỏi ở phần nội dung say đó
+Ground truth: thì chủ đầu tư phải tự phá dỡ phần nội dung sai phép đó
+---------------
+Predict text: khi nhân viên cứu hộ cố gắng đưa nó lên sàn lan
+Ground truth: khi nhân viên cứu hộ cố gắng đưa nó lên sà lan
+---------------
+Predict text: những người này đều được đào tạo về hội họa
+Ground truth: những người này đều được đào tạo về hội họa
+---------------
+Predict text: giám long truyền hợp đã long đánh hay đứng tôi đầy cổ
+Ground truth: gắn lông chim hột đá lóng lánh hay bèo đầy cổ
+---------------
+Predict text: ngủ áp hoàng em
+Ground truth: ngụ ấp hòn ngang
+---------------
+Predict text: tiếp nhất ở hơn ba mươi trường thuộc các địa phương nói trên
+Ground truth: ít nhất ở hơn ba mươi trường thuộc các địa phương nói trên
+---------------
+Predict text: đặc điểm của phải cùng cả
+Ground truth: đặc điểm của phẩy trùng tả
+---------------
+Predict text: vì ban đêm chuyện ngủ không ngon
+Ground truth: vì ban đêm chị ngủ không ngon
+---------------
+Predict text: lời lẫn trên đầu là những chiếc bảy đá hàng trăm khối
+Ground truth: lơ lửng trên đầu là những chiếc bẫy đá hàng trăm khối
+---------------
+Predict text: làm đầu tiên
+Ground truth: năm đầu tiên
+---------------
+Predict text: bảy mươi bốn bảy mươi lăm
+Ground truth: bảy mươi bốn bảy mươi lăm
+---------------
+Predict text: chín mươi chín mươi mốt
+Ground truth: chín mươi chín mươi mốt
+---------------
+Predict text: chín mươi tám chín mươi chín
+Ground truth: chín mươi tám chín mươi chín
+---------------
+Predict text: bây giờ cướp nhiều quá đi đường cũng thấy sợ
+Ground truth: bây giờ cướp nhiều quá đi đường cũng thấy sợ
+---------------
+Predict text: tiền hôn thủ thuyết doanh bằng nước nạn nạn nhân
+Ground truth: tìm hung thủ hiếp dâm bằng nước bọt nạn nhân
+---------------
+Predict text: chúng tôi yêu nhau được hai năm thì gia đình tôi xảy ra chuyện
+Ground truth: chúng tôi yêu nhau được hai năm thì gia đình tôi xảy ra chuyện
+---------------
+Predict text: trọng tài phạt thể đỏ
+Ground truth: trọng tài phạt thẻ đỏ
+---------------
+Predict text: kiểu này chắc phải cắt giảm biên chế
+Ground truth: kiểu này chắc phải cắt giảm biên chế
+---------------
+Predict text: thôi thì cứ sắp xếp như vậy
+Ground truth: thôi thì cứ sắp xếp như vậy
+---------------
+Predict text: theo phó chủ tập tỉ ban em toàn thông quốc
+Ground truth: theo phó chủ tịch ủy ban an toàn giao thông quốc gia
+---------------
+Predict text: chuẩn bị cho ngày khai trương cửa hàng đầu tiên
+Ground truth: chuẩn bị cho ngày khai trương cửa hàng đầu tiên
+---------------
+Predict text: từ sự hộ qua mức mức của một tiền này
+Ground truth: từ sự dư thừa quá mức của luồng tiền này
+---------------
+Predict text: đó chứng tỏ rằng chúng ta đã già
+Ground truth: đó chứng tỏ rằng chúng ta đã già
+---------------
+Predict text: trà lại đất trò rừng
+Ground truth: trả lại đất cho rừng
+---------------
+Predict text: các gọi kỳ trọng ở toàn giá trị
+Ground truth: các loại cây trồng ở rừng này toàn cây kém giá trị
+---------------
+Predict text: thiếu sự và tầm đúng mức từ các cờ chức nào
+Ground truth: thiếu sự quan tâm đúng mức từ các cơ quan chức năng
+---------------
+Predict text: vậy trở
+Ground truth: tại chợ cá
+---------------
+Predict text: không phải vì thời phòng trách lượng
+Ground truth: không phải vì tôi không coi trọng chất lượng
+---------------
+Predict text: thị độc được hội kỹ phòng thể trung nổi trên báo tuổi trẻ
+Ground truth: thì đọc được hồi ký không thể chuộc lỗi trên báo tuổi trẻ
+---------------
+Predict text: thiếu tướng phạm quý gọi trò biết
+Ground truth: thiếu tướng phạm quý ngọ cho biết
+---------------
+Predict text: không một chút trẻ định kế dịch
+Ground truth: không một chút trầy trụa mà đền cái gì
+---------------
+Predict text: nó được đặt tròn một đường tràn sức già đỏ
+Ground truth: nó được đặt trong một hộp đựng trang sức bọc da đỏ
+---------------
+Predict text: dân thậm lần trở diễn tiểu phẩm hoài hoặc bắt cần hùng
+Ground truth: nhóm thanh long trẻ diễn tiểu phẩm hài hắc bạch tranh hùng
+---------------
+Predict text: tới biệt kiếm nhà trò rồi nhìn khó quá
+Ground truth: tớ đi kiếm nhà trọ rồi nhưng khó quá
+---------------
+Predict text: phần cổ mà về đường
+Ground truth: xanh cỏ mượt mà ven đường
+---------------
+Predict text: chính thức bảo này
+Ground truth: chính thức đã lây lan ra bên ngoài
+---------------
+Predict text: phụ và học sinh đàn phải vì sách cao
+Ground truth: phụ huynh và học sinh đang phải è cổ vì sách giá cao
+---------------
+Predict text: khi chín phủ lúc đầu đề nghị ông sao trò những người nói dễ
+Ground truth: khi chính phủ lúc đầu đề nghị ân xá cho những người nổi dậy
+---------------
+Predict text: như anh đèn mờ áo
+Ground truth: dưới ánh đèn mờ mờ ảo ảo
+---------------
+Predict text: trong cuộc bộ tài hồi đồng bộ hàng ngày trước đó
+Ground truth: trong cuộc bỏ phiếu tại hội đồng bảo an hai ngày trước đó
+---------------
+Predict text: hộ với những văn đề xảy ra trường giới
+Ground truth: hầu hết những vấn đề xảy ra trên thế giới
+---------------
+Predict text: ông được nhiều người biết đến
+Ground truth: ông được nhiều người biết đến
+---------------
+Predict text: trà loài ở biết
+Ground truth: trả lời tôi biết
+---------------
+Predict text: thực toàn tòa bản cục
+Ground truth: ịch gã to béo ục ịch
+---------------
+Predict text: rất lượng buồn buồn
+Ground truth: áo rách lươm bươm
+---------------
+Predict text: đôi với những phản ứng khác biệt đó
+Ground truth: đối với những phản ứng khác biệt đó
+---------------
+Predict text: và đã máu bà lần
+Ground truth: và đã hiến máu ba lần
+---------------
+Predict text: tiếng hát động thần của mấy chục cầu người
+Ground truth: tiếng hét đồng thanh của mấy chục con người
+---------------
+Predict text: càng thư hại của tội báo
+Ground truth: trang thứ hai của tờ báo
+---------------
+Predict text: sau đó bà hàng xóm tin từng lỗi với
+Ground truth: sau đó bà hàng xóm tính tình xởi lởi chạy qua kể với tôi
+---------------
+Predict text: bà đặc
+Ground truth: ba mươi hai ba mươi ba
+---------------
+Predict text: nằm vì hài đồng mười bà
+Ground truth: năm mươi hai năm mươi ba
+---------------
+Predict text: đồng mùi bốn năm mười lăm
+Ground truth: năm mươi bốn năm mươi lăm
+---------------
+Predict text: xã mùi sau mười mốt
+Ground truth: sáu mươi sáu mươi mốt
+---------------
+Predict text: bảy mươi bảy mươi mốt
+Ground truth: bảy mươi bảy mươi mốt
+---------------
+Predict text: chín mươi bốn chín mươi lăm
+Ground truth: chín mươi bốn chín mươi lăm
+---------------
+Predict text: một bà nằm bảy chín
+Ground truth: một ba năm bảy chín
+---------------
+Predict text: bà còn càng kỹ cầm đào để tưởng bị đó tết
+Ground truth: bà con rang trí cành đào để chuẩn bị đón tết
+---------------
+Predict text: tội phòng thể dự là đúng khi toàn giao vào các dịp tết
+Ground truth: tôi không thấy gì là đúng khi tăng giá xe vào các dịp tết
+---------------
+Predict text: dù lực sẽ trở thành ngành trình tới mỗi
+Ground truth: du lịch sẽ trở thành ngành kinh tế mũi nhọn
+---------------
+Predict text: tự thì chồng qua đòi vì bệnh tật
+Ground truth: từ khi chồng qua đời vì bệnh tật
+---------------
+Predict text: đơn vị mình không nghe ai nói gì chưa hẳn đã tốt
+Ground truth: đơn vị mình không nghe ai nói gì chưa hẳn đã tốt
+---------------
+Predict text: không ai được ngược các em vì các em học trạm
+Ground truth: không ai được ngược đãi các em vì các em học chậm
+---------------
+Predict text: già làng nguyễn mạnh tư chở lời khoảng vấn báo giới ảnh trung dân
+Ground truth: già làng nguyễn mạnh tường trả lời phỏng vấn báo giới ảnh trung dân
+---------------
+Predict text: đó là gia thời tiếp động và nhiệt độ không quá
+Ground truth: đó là giai đoạn thời tiết ít biến động và nhiệt độ không quá thấp
+---------------
+Predict text: nhưng sau mươi con nói ra nói vào cái cảm với đây
+Ground truth: nhưng sau nghe con nói ra nói vào lại ác cảm với em
+---------------
+Predict text: những thuốc mưa ý đốt cháy vài chỗ trên chí sau pha vật ấy
+Ground truth: những điếu thuốc vô ý đốt cháy vài chỗ trên chiếc sô pha bọc vải
+---------------
+Predict text: bạn có thể tác chương trình đó đi và thực hiện tao tác cuối cùng
+Ground truth: bạn có thể tắt chương trình đó đi và thực hiện thao tác cuối cùng
+---------------
+Predict text: khách quan chúng tôi quân xác chết của người dân vô tội
+Ground truth: khắp nơi quanh chúng tôi vương vãi xác chết của người dân vô tội
+---------------
+Predict text: những chiếc lòng đèn được chơi vị vẫn lặng hoàn việc xuống phố
+Ground truth: những chiếc lồng đèn đồ chơi việt vẫn lặng lẽ mang hồn việt xuống phố
+---------------
+Predict text: nhà văn nguyên ngọc sinh nhà văn học sinh viên có người thầy và tranh cả
+Ground truth: nhà văn nguyên ngọc sinh viên có quyền hoài nghi và tranh cãi
+---------------
+Predict text: cuộc thi còn có hai giải ba giải ba và vốn giải viên thích
+Ground truth: cuộc thi còn có hai giải nhì ba giải ba và bốn giải khuyến khích
+---------------
+Predict text: hầu như các phản ứng thủ nặng là rất hiếm
+Ground truth: hầu như các phản ứng phụ nặng nề là rất hiếm gặp
+---------------
+Predict text: số tiền quá lớn khiến gia đình hưng phạm và lê dáng quán
+Ground truth: số tiền quá lớn khiến gia đình hương phạm và lê choáng váng
+---------------
+Predict text: nhất đã mặc ký ta nhất thôi chị một tuổi thôi đấy
+Ground truth: nhóc đỏ mặt tía tai nhóc thua chị một tuổi thôi đấy
+---------------
+Predict text: cảm giác được chia sẻ với bạn đời cũng sợ thích thu vị lắm
+Ground truth: cảm giác được chia sẻ với bạn đời cùng sở thích thú vị lắm
+---------------
+Predict text: tôi vào quyền giải khác đầu tiên và loại một cấp nước kem
+Ground truth: tôi vào quầy giải khát đầu tiên và gọi một cốc nước cam
+---------------
+Predict text: mẹ lần tay chân và lấy ra chiếc không vì
+Ground truth: mẹ lần tay trong ví và lấy ra chiếc phong bì
+---------------
+Predict text: em như không chạy trốn tin thành để tìm thủ thật thật sự
+Ground truth: tiêu như phong chạy trốn khỏi kinh thành để tìm hung thủ thật sự
+---------------
+Predict text: có ngày các bác sĩ điều giữ mắt cho hàng trăm người nghèo
+Ground truth: có ngày các bác sĩ điều dưỡng mổ mắt cho hàng trăm người mù nghèo
+---------------
+Predict text: không ai muốn có tiêu cực cả và cũng đừng tuyệt đối đề
+Ground truth: không ai muốn có tiêu cực cả và cũng đừng tuyệt đối hóa vấn đề
+---------------
+Predict text: vợ hắn thị mang lưới ra quá để chiều
+Ground truth: vợ hắn thị ngần mang lưới ra vá để chiều thả
+---------------
+Predict text: hiện cơ quan chức năng tiếp tục điều tra vụ việc
+Ground truth: hiện cơ quan chức năng đang tiếp tục điều tra vụ việc
+---------------
+Predict text: vì vị khác hiện họ đã trả lời như thế
+Ground truth: khi bị phát hiện họ đã trả lời như thế nào
+---------------
+Predict text: đào sát chết chất lượng công trình xây dựng trên cả nước
+Ground truth: rà soát chất lượng công trình xây dựng trên cả nước
+---------------
+Predict text: không bản nghệ tinh đàn sẽ coi một giải pháp nào
+Ground truth: không nản nghĩa tin rằng sẽ có một giải pháp nào đó
+---------------
+Predict text: mẹ cũng đã từng thăm khổ thì vẫn và cô đơn như vậy
+Ground truth: mẹ cũng đã từng thống khổ tuyệt vọng và cô đơn như vậy
+---------------
+Predict text: hai loại văn này nên được coi trọng như nhau chăm các kỳ thi
+Ground truth: hai loại văn này nên được coi trọng như nhau trong các kỳ thi
+---------------
+Predict text: vậy mới có một tiêu để phấn đấu nên người coi ý
+Ground truth: vậy mới có mục tiêu để mà phấn đấu nên người có ý thức
+---------------
+Predict text: tại đây có một ông chữ phòng nhân xử công ty
+Ground truth: tại đây có một ông trưởng phòng nhân sự công ty
+---------------
+Predict text: chỉ một điều đơn giản vậy anh ấy không bao giờ thật hiện được
+Ground truth: chỉ một điều đơn giản vậy mà anh ấy không bao giờ thực hiện được
+---------------
+Predict text: chẳng cần nhìn về phương tây quy của hàng hệ
+Ground truth: chẳng cần nhìn về phương tây quê hương của hàng hiệu
+---------------
+Predict text: đông cả cánh đồng chuyển sang một màu vàng rồi
+Ground truth: mùa đông cả cánh đồng chuyển sang một màu vàng rực
+---------------
+Predict text: tôi học cùng với các anh chị làm việc chuyên về sản xuất phần mày
+Ground truth: tôi học cùng với các anh chị làm việc chuyên về sản xuất phần mềm
+---------------
+Predict text: có lẽ đây là lời quảng cáo không hai nhất cho du lịch nào
+Ground truth: có lẽ đây là lời quảng cáo không công hay nhất cho du lịch lào
+---------------
+Predict text: từ đó đến nay gia đình chị vẫn sống trong căn nhà
+Ground truth: từ đó đến nay gia đình chị vẫn sống trong căn nhà
+---------------
+Predict text: bạn cần chung thật với nhân viên của mình cho mọi hàng
+Ground truth: bạn cần trung thực với nhân viên của mình trong mọi hoàn cảnh
+---------------
+Predict text: một số điểm nước đến đâu và hơi hết tính
+Ground truth: một số điểm nước phun đến đâu bay hơi hết đến đó
+---------------
+Predict text: do vậy vấn đề khu chú không chế bệnh đã hiện nay rất
+Ground truth: do vậy vấn đề khu trú khống chế bệnh tả hiện nay rất khó
+---------------
+Predict text: đó là câu hỏi mà đến nay vẫn chưa có câu trả
+Ground truth: đó là câu hỏi mà đến nay vẫn chưa có câu trả lời
+---------------
+Predict text: hai nội mở khu vực tay song hồng nên là khu vực
+Ground truth: hà nội mở rộng khu vực hồ tây sông hồng nên là khu vực tĩnh
+---------------
+Predict text: biên chế này nhà thanh đội lạ nam nam quốc nhẹ
+Ground truth: biên chế này nhà thanh gọi là an nam quốc nhạc
+---------------
+Predict text: hơn là những giá các em theo chủ quý của nhau
+Ground truth: hơn là dẫn dắt các em theo chủ ý của giáo viên
+---------------
+Predict text: bạn có thể tham khảo một số ý lịch điện thưởng sau đây
+Ground truth: bạn có thể tham khảo một sơ yếu lý lịch điện tử sau đây
+---------------
+Predict text: nhạc sĩ lao với các sân và tuổi trẻ
+Ground truth: nhạc sĩ la hối với ca khúc xuân và tuổi trẻ
+---------------
+Predict text: vậy ai sẽ chỉ về những trường hợp này
+Ground truth: vậy ai sẽ chịu trách nhiệm về những trường hợp này
+---------------
+Predict text: tuy ký trước còn vô và khó khăn nơi con
+Ground truth: tuy phía trước còn vô và khó khăn đối với con
+---------------
+Predict text: bốn năm trời trời bị một mình với bóng mình nhiều khen khóc
+Ground truth: bốn năm trời bị câm một mình với bóng mình nhiều òa khóc
+---------------
+Predict text: em sẵn anh anh ấy nhưng là cảm thấy mình bị xúc phạm
+Ground truth: em sợ mất anh ấy nhưng lại cảm thấy mình bị xúc phạm
+---------------
+Predict text: chào đồ đối với thể như lại là chân thật chân thật lớn một người
+Ground truth: trò đùa đối với thầy nhưng lại là chân thật chân thật với một người
+---------------
+Predict text: đó là nhận xét chung của nhiều cộng danh đáp điều hành này
+Ground truth: đó là nhận xét chung của nhiều tổng giám đốc điều hành ngày nay
+---------------
+Predict text: người pháp đã đồng ý với những luật dành riêng
+Ground truth: người pháp đã đồng ý với cách quản lý lĩnh vực dành riêng
+---------------
+Predict text: hắn thầy đổ làm lời sau khi ngày đình đến xứ người
+Ground truth: hắn thay đổi lầm lì sau khi theo gia đình đến xứ người
+---------------
+Predict text: yêu tôi hấp dẫn mới thu hút đầu tư nước ngoài là việc nam
+Ground truth: yếu tố hấp dẫn mới thu hút đầu tư nước ngoài vào việt nam
+---------------
+Predict text: mà giờ đây nó không đợi được đến lúc huy về
+Ground truth: vậy mà giờ đây nó không đợi được đến lúc huy về
+---------------
+Predict text: một góc câu cá trên cầu sài ảnh may vinh
+Ground truth: một góc câu cá trên cầu sài gòn ảnh mai vinh
+---------------
+Predict text: một bài người trong bọn đưa mắt nhìn ảnh giá
+Ground truth: một vài người trong bọn họ đưa mắt nhìn mảnh giấy
+---------------
+Predict text: trước đây nhìn từ bên ngoài nay ngày không khác gì một căn nhà hoang
+Ground truth: nhưng trước đây nhìn từ bên ngoài nơi này không khác một căn nhà hoang
+---------------
+Predict text: có nhân phải là thuốc đặt chỉ của pháp hiếm vật kỳ đất
+Ground truth: có nhưng phải là thuốc đặc trị của pháp hiếm và cực kỳ đắt
+---------------
+Predict text: một số bản trẻ cũng có ý nghĩ như cao cường
+Ground truth: một số bạn trẻ cũng có ý nghĩ như cao cường
+---------------
+Predict text: tôi đã có thể gian tuyệt vời khi cho đội tuyển
+Ground truth: tôi đã có thời gian tuyệt vời khi chơi cho đội tuyển
+---------------
+Predict text: thỉnh thẳng con đi qua dường lại xe ở thuốc
+Ground truth: thỉnh thoảng con đi qua dừng lại dựng xe ngồi hút thuốc
+---------------
+Predict text: chưa vội đội qua những câu chuyện của ông mới lần của làm sao
+Ground truth: chú bộ đội qua những câu chuyện của ông mới gần gũi làm sao
+---------------
+Predict text: thằng cán người phải thu và cả màu với đâu trộm
+Ground truth: ăn cá cá thu và cá mòi với rau trộn
+---------------
+Predict text: có bằng hạt sĩ nhưng ngành chơi là một loại thế
+Ground truth: có bằng thạc sĩ những ngành trên là một lợi thế
+---------------
+Predict text: minh hồng quân của công thành sư tập từ báo nước ngoài
+Ground truth: minh nhật hồng quân vũ công thành sưu tầm từ báo nước ngoài
+---------------
+Predict text: vốn có phải qua một thi đất theo tôi hè
+Ground truth: muốn có bằng lái phải qua một đợt thi rất khắt khe
+---------------
+Predict text: yêu nhau khoảng vài tháng thì chúng tôi đã có quan hệ
+Ground truth: yêu nhau khoảng vài tháng thì chúng tôi đã có quan hệ tình dục
+---------------
+Predict text: khó sẽ duyên đủ trong đám cưới
+Ground truth: khó sao duyên dám cho anh uống rượu trong đám cưới
+---------------
+Predict text: ông dương nước lên phá tổng tổng cục trưởng tập cục nhà
+Ground truth: ông dương đức lân phó tổng cục trưởng tổng cục dạy nghề
+---------------
+Predict text: đối xử với bạn như yêu cũ bạn đã từng làng
+Ground truth: đối xử với bạn như người yêu cũ của bạn đã từng làm
+---------------
+Predict text: em da khi kế ăn chủ tịch hồ chiến bên thì có nhiều người
+Ground truth: tham gia thiết kế lăng chủ tịch hồ chí minh thì có nhiều người
+---------------
+Predict text: người vậy công ty phải có trách nhiệm thường
+Ground truth: vì vậy công ty b phải có trách nhiệm bồi thường
+---------------
+Predict text: nông dân trọng bé than cứ một vụ lại được ba vụ thấp
+Ground truth: nông dân trồng mía than cứ một vụ được lại ba vụ thất
+---------------
+Predict text: thị người xem cũng được nâng cao tiếng thất lý lấy
+Ground truth: thì người xem cũng được nâng cao kiến thức về địa lý
+---------------
+Predict text: ngày xưa các cụ làm bị sách làm minh hạ cho sách đó
+Ground truth: ngày xưa các cụ làm bìa sách là minh hoạ cho cuốn sách đó
+---------------
+Predict text: tôi đã nhiều lần phản đối quyết liệt việt nước thải năng ngoài
+Ground truth: tôi đã nhiều lần phản đối quyết liệt việc nước thải tuồn ra ngoài
+---------------
+Predict text: nhiều gia đình hiện nay thích tự gây thị trương trình
+Ground truth: nhiều gia đình hiện nay thích tự giới thiệu chương trình
+---------------
+Predict text: tôi là một người miền tai đang làm nghiên cuốn sinh ở mỹ
+Ground truth: tôi là một người miền tây đang là nghiên cứu sinh ở mỹ
+---------------
+Predict text: thì đi sau và bên trong cảnh chí thiên nhiên càng hùng vị
+Ground truth: càng đi sâu vào bên trong cảnh trí thiên nhiên càng hùng vĩ
+---------------
+Predict text: mong bạn bình tâm sẽ nghĩ và chẳng được giải quyết tốt nhất
+Ground truth: mong bạn bình tâm suy nghĩ và chọn được cách giải quyết tốt nhất
+---------------
+Predict text: dù này khó hôm chia bạn vào bạn trẻ toàn người sao lại
+Ground truth: điều này khó hơn khi bạn vào bàn tiệc toàn người xa lạ
+---------------
+Predict text: cũng đều trông thể quan phố thú nhỏ sợ tôi ở đó
+Ground truth: cũng đều trong tư thế ngõ nhỏ phố nhỏ phở tôi ở đó
+---------------
+Predict text: thì một chế làm đèn tại công viên ở chủ đối bác kim
+Ground truth: thành một chiếc lồng đèn khổng lồ tại công viên ở thủ đô bắc kinh
+---------------
+Predict text: câu tròn của quá ông tại không bé ba như là
+Ground truth: câu chuyện của quá khứ ông kể không biết bao nhiêu lần
+---------------
+Predict text: một số trung sa nào
+Ground truth: màu son trông thật tuyệt trên bất kì màu da nào
+---------------
+Predict text: ông ăn mà những mảnh anh trai làm chi
+Ground truth: ông ăn chay mà nghĩ mặn thì ăn chay làm chi
+---------------
+Predict text: kiên cơ sở bảo nhân khi phi phạm sẽ được lý nhau
+Ground truth: trên cơ sở đó những hành vi vi phạm sẽ được xử lý nghiêm
+---------------
+Predict text: mua cư qua chiến thức để các hàng yếu này tham khảo và tin tưởng
+Ground truth: một cơ quan chính thức để khách hàng khiếu nại tham khảo và tin tưởng
+---------------
+Predict text: mười ứng sự xương phạm tôi làm bộ tiền này được cô sẽ
+Ground truth: một tình huống ứng xử sư phạm tôi làm bộ tỉnh được cô duyệt
+---------------
+Predict text: trận an cơ nhà người mà lại thông trong chúa nắng nghề nổi
+Ground truth: chẳng lẽ ăn cơm nhà người mà lại không chăm chú lắng nghe người nói
+---------------
+Predict text: làm ở bão đang làm việc quê giảm
+Ground truth: nghĩa là nếu bạn đang làm việc dưới quyền một giám sát viên
+---------------
+Predict text: cảm có nhờ trong sợ đỏ cả áo chín
+Ground truth: kẽm có nhiều trong gan sò thịt đỏ cá óc trứng
+---------------
+Predict text: ông thư một tôi con khác suy can và thông hành bà thuyết
+Ground truth: ung thư từ một cơ quan khác di căn vào hệ thống hạch bạch huyết
+---------------
+Predict text: cuộc thi tự hào sự việc đã theo sai
+Ground truth: cuộc thi tự hào sử việt đã hết giai đoạn i
+---------------
+Predict text: cuộc đầu tiền của áo đỏ có thể sẽ bé than bảo lực
+Ground truth: cuộc biểu tình của áo đỏ có thể sẽ biến thành bạo lực
+---------------
+Predict text: trên thực tế một cuộc điều tra đã được tuyển
+Ground truth: trên thực tế một cuộc điều tra đã được tiến hành
+---------------
+Predict text: trải sài hàng chục cây số đào thu ngọt tâm
+Ground truth: trải dài hàng chục cây số đều thu gọn vào tầm mắt
+---------------
+Predict text: thậm như xã đó thi chị có thể làm vậy thôi
+Ground truth: thản nhiên giá đó thì chỉ có thể làm vậy thôi
+---------------
+Predict text: bác đầu cuộc trẻ luôn kiên sửa bệnh nội và bản hoạt
+Ground truth: bắt đầu cuộc chạy đua mùa kinh doanh tết giữa bánh nội và bánh ngoại
+---------------
+Predict text: cái nhà hát bị tâm tiền ông khai lâm hà
+Ground truth: cái nhà hát bị đập tan tành ông khoái lắm à
+---------------
+Predict text: bên cơn vẫn thiên bạc cuộc áo cũng chỉ vậy của nước sơ
+Ground truth: mâm cơm vẫn thanh đạm tủ áo của vợ cũng chỉ vài bộ đơn sơ
+---------------
+Predict text: thì trước luận nào cũng chỉ có tiếng đẹp hương răng
+Ground truth: hình thức kỷ luật nào cũng chỉ có tính định hướng răn đe
+---------------
+Predict text: đây bà đang bị nhờ bệnh và sớm giữ bất ngờ hộ
+Ground truth: hiện nay bà đang bị nhiều bệnh và sống dưới mức nghèo khổ
+---------------
+Predict text: năm trên giờ gần cả thẳng bác chờ tôi cảm thể bằng thời cô đọc
+Ground truth: nằm trên giường gần cả tháng bất giác tôi cảm thấy mình thật cô độc
+---------------
+Predict text: nhà khi giờ học trả quá thờ
+Ground truth: nhảm nhí khi giờ học chán phèo buồn ngủ quá ờ buồn ngủ
+---------------
+Predict text: nó chỉ một hồi ông làm bộ để tay lên tay trên số
+Ground truth: nói chuyện một hồi ông làm bộ để tay lên tay em trên cần số
+---------------
+Predict text: còn ăn tôi trong chỉ còn miền cũng lên đỏ
+Ground truth: còn anh trai tôi trong nhật ký của mình cũng linh cảm điều đó
+---------------
+Predict text: sản trung tôi tạm đẹp thông đây và những trụ biển khác mà
+Ground truth: sáng chúng tôi tạm biệt thung nai và những chủ nhân mến khách mộc mạc
+---------------
+Predict text: bán ngay đầu chỉ học phải nhờ kim sản đi sử trường
+Ground truth: mấy ngày đầu thúy hà phải nhờ kim dẫn đi giới thiệu trường
+---------------
+Predict text: họ thêm ghi vợ văn hoa cơm tiên như thể nào
+Ground truth: họ thích nghi với văn hóa công ty như thế nào
+---------------
+Predict text: môn thuyền cổ chút năng và hoa học xã hội mang phục
+Ground truth: mô hình cấu trúc chức năng và khoa học xã hội mang tính giáo dục
+---------------
+Predict text: và bạn cần cổ vi làm cuộc để với thứ dòng cao
+Ground truth: và bạn cần có việc làm ổn định với thu nhập cao
+---------------
+Predict text: đây là thằng còn số đăng kỷ thấp nhất từ đầu năm để nay
+Ground truth: đây là tháng có số đăng ký thấp nhất từ đầu năm đến nay
+---------------
+Predict text: thật thì câu thể làm từ kỳ như nhà được
+Ground truth: thật ra thì cũng không thể làm cầu kì như ở nhà được
+---------------
+Predict text: tạo là theo khi trẻ đây là trách nhà của bộ thi xem
+Ground truth: vả lại theo quy chế đây là trách nhiệm của mỗi thí sinh
+---------------
+Predict text: con danh đang thi công hai nhắn cầu và chết ông thật thắng
+Ground truth: công nhân đang thi công hai nhánh cầu rạch chiếc ảnh thuận thắng
+---------------
+Predict text: hoạt không biết chơi phòng là sự khi bị đuổi thủ với áp
+Ground truth: họ không biết chơi phòng ngự là gì trừ khi bị đối thủ vây ép
+---------------
+Predict text: thủy cùng họ sẽ nhau về nhà làm thông
+Ground truth: cuối cùng họ dẫn nhau về nhà với thúng làn không
+---------------
+Predict text: kim mới của chân luôn sự trợ lại sau phim thật hợp
+Ground truth: phim mới của trương nghệ mưu sự trở lại dòng phim nghệ thuật
+---------------
+Predict text: còn hàng trăm xe hát đạp bán thì ông không như thế
+Ground truth: còn hàng trăm chiếc khác đã bán thì ông không nhớ hết
+---------------
+Predict text: cùng vợ ăn vội chém cơm thành ông bày làm bài tập
+Ground truth: cùng vợ ăn vội chén cơm thành lại lo ôn bài làm bài tập
+---------------
+Predict text: đội nào thành tích càng cao thì quảng lý càng khó
+Ground truth: đội nào thành tích càng cao thì quản lý càng khó
+---------------
+Predict text: phải chăng dựng niềm tin vào tình yêu khó thế
+Ground truth: phải chăng xây dựng niềm tin vào tình yêu khó thế
+---------------
+Predict text: còn ba cầu thủ văn thương bật yếu và hại lâm thì sau thưa ông
+Ground truth: còn ba cầu thủ văn trương bật hiếu và hải lâm thì sao thưa ông
+---------------
+Predict text: tháng bảy nhiều người con khóc nên trời buồn và khóc theo
+Ground truth: tháng bảy nhiều người con khóc nên trời buồn và khóc theo
+---------------
+Predict text: ca khúc được khác giải yêu thích nhất bà tôi nguyễn vĩnh tiến
+Ground truth: ca khúc được khán giả yêu thích nhất bà tôi nguyễn vĩnh tiến
+---------------
+Predict text: đầu tư tiêu dùng và xuất khẩu đều sẽ tăng mạnh
+Ground truth: đầu tư tiêu dùng và xuất khẩu đều sẽ tăng mạnh
+---------------
+Predict text: được cổ không khai nguồn gốc phải bị coi là hàng giả
+Ground truth: đồ cổ không công khai nguồn gốc phải bị coi là hàng giả
+---------------
+Predict text: từng là chủ tế hàng trăm lệ an tán gió
+Ground truth: từng là chủ tế hàng trăm lễ an táng mộ gió
+---------------
+Predict text: hình như không có cả một trong an tài đất
+Ground truth: hình như không có cả một trong hai tài và đức
+---------------
+Predict text: bên cạnh đó chúng tôi còn làm hàng việt khác như
+Ground truth: bên cạnh đó chúng tôi còn làm hàng loạt việc khác như
+---------------
+Predict text: chúng đó yêu nhau rất tự nhiên các nhau cũng rất tự nhiên
+Ground truth: chúng nó yêu nhau rất tự nhiên ghét nhau cũng rất tự nhiên
+---------------
+Predict text: tất cả để cho người bệnh và thân nhân lòng khi đến bệnh viện
+Ground truth: tất cả để cho người bệnh và thân nhân hài lòng khi đến bệnh viện
+---------------
+Predict text: tôi thể chết mất và còn nguyện sinh chú giúp con
+Ground truth: tôi khẽ mắt và thầm cầu nguyện xin chúa giúp con
+---------------
+Predict text: lúc hơn phấn nó chuyện phóng lao chẳng có chi phúc tạp
+Ground truth: lúc hưng phấn nói chuyện phóng lao chẳng có chi phức tạp
+---------------
+Predict text: sẽ làm chúng ta ngủ không đủ không đúng quy luật
+Ground truth: sẽ làm chúng ta ngủ không đủ không đúng quy luật
+---------------
+Predict text: có bao giờ ông gặp tình không trả lời được con hỏi của dân
+Ground truth: có bao giờ ông gặp tình huống không trả lời được câu hỏi của dân
+---------------
+Predict text: cả đời chưa bao giờ tôi có cảm giác như vậy
+Ground truth: cả đời chưa bao giờ tôi có cảm giác sung sướng như vậy
+---------------
+Predict text: ít có cô hồ sống cho các hành khách trên máy bay
+Ground truth: ít có cơ hội sống sót cho các hành khách trên máy bay
+---------------
+Predict text: trung quốc đưa ra hình phải cuộc thể đối với tội
+Ground truth: trung quốc đưa ra hình phạt cụ thể đối với tội tham nhũng
+---------------
+Predict text: hai cháu ngạc nhiên đón khách sung cặp mới
+Ground truth: hai cháu ngạc nhiên đón khách lạ sung sướng ôm cặp mới
+---------------
+Predict text: nhân cô quyết chứng minh người không phải vô dụng
+Ground truth: nhưng cô quyết chứng minh người mù không phải vô dụng
+---------------
+Predict text: họ đã trao nhau lời hiện ước nên nhiên chồng vào
+Ground truth: họ đã trao nhau lời hẹn ước nên duyên chồng vợ
+---------------
+Predict text: máu thỉnh thoảng tới vai ngày nghỉ người thì bị thường ra bảo chơi
+Ground truth: nếu thỉnh thoảng có vài ngày nghỉ người thụy điển thường ra đảo chơi
+---------------
+Predict text: những người cô lập mình có thể gặp phải chứng trầm cảm hoạt lao
+Ground truth: những người cô lập mình có thể gặp phải chứng trầm cảm hoặc lo lắng
+---------------
+Predict text: thực tế vai trò của bạn và người vấn đối nhau
+Ground truth: thực tế vai trò của bạn và người phỏng vấn đối chiếu nhau
+---------------
+Predict text: sự giúp đỡ cứu bà là vô cùng quý báo cho chúng tôi
+Ground truth: sự giúp đỡ của bà là vô cùng quí báu cho chúng tôi
+---------------
+Predict text: nhà trường đột một thủy đề tài kiến tôi mất phương hướng
+Ground truth: nhà trường đột ngột hủy đề tài khiến tôi mất phương hướng
+---------------
+Predict text: các vật tử tấn lời tiêu vào của thầy như thế nào
+Ground truth: các phật tử hưởng ứng lời kêu gọi của thầy như thế nào
+---------------
+Predict text: bạn nhận đối tượng này sẽ được giải quyết như thế nào
+Ground truth: vậy những đối tượng này sẽ được giải quyết như thế nào
+---------------
+Predict text: sang kỹ giữ những bàn biểu diễn là những phút vui tập thể
+Ground truth: xen kẽ giữa những màn biểu diễn là những phút vui chơi tập thể
+---------------
+Predict text: sáng ra thấy dân từng súng quanh con giá đã chết
+Ground truth: sáng ra thấy dân tình xúm quanh con tê giác khổng lồ đã chết
+---------------
+Predict text: phong mục điều sâu sao mình đã thực sự yêu bạn
+Ground truth: và một điều sâu xa là mình đã thật sự yêu bạn
+---------------
+Predict text: nhiều hơn mươi giá bán xe nặng triệu trên vai mẹ
+Ground truth: nhiều hôm mưa gió bán ế gánh chè nặng trĩu trên vai mẹ
+---------------
+Predict text: phí dưới và xuân quanh kể làm nước lên lãng chảy qua
+Ground truth: phía dưới và xung quanh kệ là nước bẩn lênh láng chảy qua
+---------------
+Predict text: tôi đứng trước hai nói và tôi chọn con được yếu người đi hơn
+Ground truth: tôi đứng trước hai lối rẽ và tôi chọn con đường ít người đi hơn
+---------------
+Predict text: chúng tôi đã điều tra những trường hợp có nghe vấn gian giữa
+Ground truth: chúng tôi đã điều tra những trường hợp có nghi vấn gian dối
+---------------
+Predict text: vậy cần nào mới sinh lỗi nhân dân tập cuối
+Ground truth: vậy chừng nào mới tới xin lỗi nhân dân tập cuối
+---------------
+Predict text: hôm nào tăng ca sớm hạnh được giao nhìn vụ đi chờ trao
+Ground truth: hôm nào tan ca sớm hạnh được giao nhiệm vụ đi chợ cho bữa tối
+---------------
+Predict text: vào được nhà anh đấy sự cửa đi đấy
+Ground truth: vào được nhà anh đấy sửa cửa đi nguy hiểm đấy
+---------------
+Predict text: rồi mặt dù biết là lớn nhưng vẫn tôi cứ nói ra
+Ground truth: rồi mặc dù biết là ngẩn tôi cứ nói ra
+---------------
+Predict text: yên ông nguyễn văn ba biển gỗ gặp xã não não chết ngay tại chỗ
+Ground truth: riêng ông nguyễn văn ba bị gỗ đè dập sọ não chết ngay tại chỗ
+---------------
+Predict text: mỗi người nọ một cười với những ý nghĩa theo nhau
+Ground truth: mỗi người nở một nụ cười với những ý nghĩa khác nhau
+---------------
+Predict text: do vậy giảm thử việc thu sống và mùa tin
+Ground truth: do vậy sẽ ảnh hưởng tới việc thu sóng vô tuyến
+---------------
+Predict text: phiên chiếu nguyên bản tiến pháp có phụ đề tiến việc
+Ground truth: phim chiếu nguyên bản tiếng pháp có phụ đề tiếng việt
+---------------
+Predict text: bóng một xanh là vùng tâm ở có thể đi qua
+Ground truth: bóng màu xanh là vùng tâm bão có thể đi qua
+---------------
+Predict text: sau một ngày lao động tăng mờ ưu tiên chọn ông
+Ground truth: sau một ngày lao động căng mệt bạn ưu tiên chọn
+---------------
+Predict text: hà cũng chẳng mình có nói hay không để cả lại ông ấy
+Ground truth: hà cũng chẳng nhớ mình có nói hay không để cãi lại ông ấy
+---------------
+Predict text: bản thân tôi cũng tham gia một vai rất nhỏ nữa
+Ground truth: bản thân tôi cũng tham gia một vai rất nhỏ nữa
+---------------
+Predict text: hôm sau ở máy thấy cái chuyển đã tự chỉnh rồi rồi
+Ground truth: hôm sau mở máy thấy cái truyện đã tự hoàn chỉnh rồi
+---------------
+Predict text: đi giờ thì đáng được khen là thông minh chứ thành áo
+Ground truth: bây giờ thì đáng được khen là thông minh chứ hả
+---------------
+Predict text: chỉ tìm nhà cho em ở ngay cũng trường chỉ học
+Ground truth: chị tìm nhà cho em ở trọ ngay cổng trường chị học
+---------------
+Predict text: đến đà bản phải chuẩn bị đôi chân để đi bộ
+Ground truth: đến đà lạt bạn phải chuẩn bị đôi chân để đi bộ
+---------------
+Predict text: họ được bỗng đầu những tay trình với giá trẻ mẹ
+Ground truth: họ được bọn đầu nậu những tay trùm thuê với giá rẻ mạt
+---------------
+Predict text: một bà xem trọng đến gặp thấp sĩ trẻ thăm bệnh bắc sĩ họ
+Ground truth: một bà sang trọng đến gặp bác sĩ trẻ khám bệnh bác sĩ hỏi
+---------------
+Predict text: nhưng lực ngành tiếp kém đồ đất giá và than nghĩ
+Ground truth: nhân lực ngành thiết kế đồ họa đắt giá và khan hiếm
+---------------
+Predict text: sau đó bạn thân học sinh phải làm đơn sinh học
+Ground truth: sau đó bản thân học sinh phải làm đơn xin học bổng
+---------------
+Predict text: chỉ có thực phẩm mới giúp bạn làm được này
+Ground truth: chỉ có thực phẩm mới giúp bạn làm được việc này
+---------------
+Predict text: với các giá màu cặp phê sử không cần điều trị
+Ground truth: với các màu cà phê sữa không cần điều trị
+---------------
+Predict text: họ bảo tôi giống như người thì tôi lại thấy hỏi giống người việt
+Ground truth: họ bảo tôi giống người hàn thì tôi lại thấy họ giống người việt
+---------------
+Predict text: mà đổi tuyển pháp đang là đổi chiến ưu thế hơn so với thủy sĩ
+Ground truth: và đội tuyển pháp đang là đội chiếm ưu thế hơn so với thụy sĩ
+---------------
+Predict text: trình đổi chuyên môn của cô khiến cô quá hồ tư cấp
+Ground truth: trình độ chuyên môn của cô khiến cô quá thừa tư cách
+---------------
+Predict text: những câu hỏi trên sẽ giúp bạn làm được điều này
+Ground truth: những câu hỏi trên sẽ giúp bạn làm được điều này
+---------------
+Predict text: còn nhưng bản không dám chắc họ có hạnh phúc hay không
+Ground truth: vẫn còn nhưng bạn không dám chắc họ có hạnh phúc hay không
+---------------
+Predict text: đó cũng là sự tiếp xúc gần của nhất của bọn em
+Ground truth: đó cũng là sự tiếp xúc gần gũi nhất của bọn em
+---------------
+Predict text: em hãy tỉnh táo mà tìm những đỉnh hướng cho tương lai
+Ground truth: em hãy tỉnh táo mà tìm những định hướng tốt hơn cho tương lai
+---------------
+Predict text: nhưng chẳng có bị phản xúc nào dùng bạc phủ chia chắn
+Ground truth: nhưng chẳng có điểm sản xuất nào dùng bạt phủ che chắn
+---------------
+Predict text: có bán người đúng phải nói chiếc súng đường
+Ground truth: có mấy người đụng phải nó suýt ngã chúi xuống đường
+---------------
+Predict text: bạn đi thì đến một khu làng dân tộc thủy số
+Ground truth: đoàn đi thuyền đến một khu làng dân tộc thiểu số
+---------------
+Predict text: thì học đồng thế chống này cũng không có giá trị pháp lý
+Ground truth: thì hợp đồng thế chấp này cũng không có giá trị pháp lý
+---------------
+Predict text: ba tôi hạnh diễn nói chuyện với phố học sinh cùng lên xe đầu
+Ground truth: ba tôi hãnh diện nói chuyện với số học sinh cùng lên xe đò
+---------------
+Predict text: một anh trai tuấn đang ngồi vì tổ người
+Ground truth: một anh trai tuấn đang ngồi tù vì tội giết người
+---------------
+Predict text: được bày trên những thời bên cạnh những món xem hệ thông phúc
+Ground truth: được bày trên những bệ thờ bên cạnh những bó sen huệ thơm nức
+---------------
+Predict text: các lương sau đây sẽ giúp bạn tìm ra ứng cử viên học
+Ground truth: các bước sau đây sẽ giúp bạn tìm ra ứng cử viên thích hợp
+---------------
+Predict text: vì chúng có thể làm đăng của bạn dễ bị bố
+Ground truth: vì chúng có thể làm răng của bạn dễ bị vàng
+---------------
+Predict text: giải nhất khi chương vàng thuộc về nhà của cộng xếp
+Ground truth: giải nhất huy chương vàng thuộc về nhà nhiếp ảnh của cộng hòa séc
+---------------
+Predict text: để sinh thị thực công tác về cơ bản phải có
+Ground truth: để xin thị thực công tác về cơ bản bạn phải có
+---------------
+Predict text: tôi nắm bằng tay xưa ba tôi từng thương tôi đau cầm giữ
+Ground truth: tôi nắm bàn tay xưa ba tôi từng thương yêu đau xót cầm giữ
+---------------
+Predict text: trong rộng tháng người chỉ nhìn được mắt kính mà khổ
+Ground truth: trong dòng thác người chỉ nhìn được mắt kính và khẩu trang
+---------------
+Predict text: khai bản chuyển lãm viên mua lớn vì tranh sơn mày nam
+Ground truth: khai mạc triển lãm quy mô lớn về tranh sơn mài việt nam
+---------------
+Predict text: không nên chị giỏi vào bài viết của bạn để các nguyên thêm
+Ground truth: không nên chỉ dựa vào bài viết của bạn để thuyết minh thêm
+---------------
+Predict text: và đầu chục con người thành việc chi
+Ground truth: và giáo dục con người trở thành việc luyện trí nhớ
+---------------
+Predict text: nhưng nhưng lúc đầu là chị ở dài chuyện trong những ngày thường
+Ground truth: tuy nhiên hợp đồng này chỉ có giá trị trong những ngày bình thường
+---------------
+Predict text: bến đầy gặp ra đây là làm thủy nào để ý
+Ground truth: vấn đề đặt ra ở đây là làm thế nào để
+---------------
+Predict text: nhưng nhiều du khách vẫn thể kết vọng khi lên điện nuôi
+Ground truth: nhưng nhiều du khách thấy thất vọng khi lên đến nơi
+---------------
+Predict text: trên mạnh ai cùng có thanh tây khẩu trang miền
+Ground truth: trên mặt ai cũng có khăn tay khẩu trang che miệng
+---------------
+Predict text: căn ngay càng nhiễm vì công việc chẳng
+Ground truth: càng ngày mình càng nghĩ nhiều về công việc giảng dạy
+---------------
+Predict text: các nhân hoa đơn tìm nước cũng kèm theo khoảng tiền
+Ground truth: tất nhiên hóa đơn tiền nước cũng kèm luôn khoản tiền
+---------------
+Predict text: bạn đọc có thật nhiều thời gian thư
+Ground truth: chúc bạn đọc có thật nhiều thời gian thư giãn thoải mái
+---------------
+Predict text: bằng trên mày đen vào sách không lạnh vào đâu được
+Ground truth: hàng chân mày đen và xếch không lẫn vào đâu được
+---------------
+Predict text: bạn ngày chờ không nắng gió lãnh nên thương vẫn yêu khách
+Ground truth: cả ngày trời không nắng gió lạnh nên thưa vắng du khách
+---------------
+Predict text: được hết của công việc ấy là một lực rất nữ
+Ground truth: làm được hết khối công việc ấy là một nỗ lực rất lớn
+---------------
+Predict text: người anh chuyên cơ ba ngày thường thì bà cho gì cũng được
+Ground truth: người ăn xin thưa bà ngày thường thì bà cho gì cũng được
+---------------
+Predict text: bạn không bao giờ ra ngoài mà không dùng em nó
+Ground truth: bạn không bao giờ ra ngoài mà không dùng kem lót
+---------------
+Predict text: vài lần chuyện làm tranh tượng không lời như thế hạnh ra
+Ground truth: vài lần triển lãm tranh tượng không lời như thế hắn sẽ nhận ra
+---------------
+Predict text: người đàn ông kim dường tìm lên một điểm rồi mở
+Ground truth: người đàn ông trên giường thình rên lên một tiếng rồi mở mắt
+---------------
+Predict text: tự quan người ta đèn bắt tôi giữa đêm không bao
+Ground truth: tối qua người ta đến bắt tôi giữa đêm hôm khuya khoắt
+---------------
+Predict text: ở thằng cạnh quyết lập bắt con sống mà thì
+Ground truth: bảo thằng quyết nó bắt con gà sống nâu mà thịt
+---------------
+Predict text: vì bắt thủy dành lành bảy những lý thuyết hay trần cây thịt việt
+Ground truth: vị bác sĩ hiền lành ấy có những lý thuyết trồng cây thật thú vị
+---------------
+Predict text: kiểu viết rất thương mà trẻ thường mang theo có thể là gì
+Ground truth: những kiểu vết thương mà trẻ thường mang theo có thể là gì
+---------------
+Predict text: phim về mẹ cho đi ca tật chung sau một năm bạn trở về nhà
+Ground truth: xin với mẹ cho đi cai tập trung sau một năm bạn trở về nhà
+---------------
+Predict text: ghi làm một cảm điểm đến chương bản
+Ground truth: đầu tiên là một tấm âm bản sau đó mới đến dương bản
+---------------
+Predict text: ngày nay chung tôi đã tuyệt thu được ảnh như vào chế
+Ground truth: mấy ngày nay chúng tôi đã tịch thu được khá nhiều gà chết
+---------------
+Predict text: nhưng công an nguồn xuất hiện bên cạnh một người như vậy
+Ground truth: hiển nhiên không ai muốn xuất hiện bên cạnh một người như vậy
+---------------
+Predict text: hình ảnh cần cao quốc điểm tưởng được cung tiêu
+Ground truth: hình ảnh quảng cáo điếu thuốc điện tử được công ty t
+---------------
+Predict text: trẻ hai dung chục vận cửa lên một số
+Ground truth: kiểu hài dung tục vẫn cứ lềnh ở một số tụ điểm
+---------------
+Predict text: mời tâm sự cuộc thi viết ảnh một giờ không điện
+Ground truth: mời tham dự cuộc thi viết ngắn một giờ không điện
+---------------
+Predict text: lần đầu tiên một nên ngược việc khách thức việc tắc nhật của tôi
+Ground truth: lần đầu tiên một nhân viên người việt thách thức việc tác nghiệp của tôi
+---------------
+Predict text: lúc đó chỉ tưởng làm như vậy cũng là má vui
+Ground truth: lúc đó chị tưởng làm như vậy cũng làm má vui
+---------------
+Predict text: người nghe tiếng biển vào điểm từng đêm rơi
+Ground truth: ngồi nghe tiếng biển và thư thả đếm từng giọt đen rơi
+---------------
+Predict text: mỗi con ngay tham động ấy thì phải sửa
+Ground truth: muốn công nhận ngay pha bóng ấy thì phải sửa luật
+---------------
+Predict text: quản lý nhanh lúc vì do không vận đôi khi
+Ground truth: quản lý nhà nước về giao thông vận tải đô thị
+---------------
+Predict text: sau đó họ lên la xăng chơi rồi đánh cấp được bé
+Ground truth: sau đó họ lân la sang chơi rồi đánh cắp đứa bé
+---------------
+Predict text: anh nhưng bảo tôi vì trước còn anh đi theo cô gái
+Ground truth: anh nhơn bảo tôi về trước còn anh đi theo cô gái
+---------------
+Predict text: chứ bạn cần tìm hiểu thông tin quy hoạch khu đất
+Ground truth: trước hết bạn cần tìm hiểu thông tin quy hoạch khu đất
+---------------
+Predict text: những sản phẩm giúp nữ ngược và nội cấp anh hiện đêm
+Ground truth: những sản phẩm giúp nở ngực và tan mỡ cấp tốc ảnh yến trinh
+---------------
+Predict text: thống sự ảnh những mà được giải
+Ground truth: phóng sự ảnh những màn biểu diễn ngoạn mục trên bầu trời
+---------------
+Predict text: của ông chẳng ai chịu nổi cả tim thăm vui của tôi
+Ground truth: nhưng cuối cùng chẳng ai chịu nổi cái tính ham vui của tôi
+---------------
+Predict text: cũng cho trung tâm này công an đạp đặc
+Ground truth: kiểm tra trung tâm này công an đã bắt giữ tới
+---------------
+Predict text: hoa thường vẫn nữa chờ trong tiếng phòng sách của
+Ground truth: hoa phượng vẫn nở đỏ trời trong tiếng ve xao xác khôn
+---------------
+Predict text: tự đã lại sai đà đà cạnh phía
+Ground truth: từ đó lại sa đà vào nhiều nghịch cảnh đáng tiếc
+---------------
+Predict text: mong anh hãy hiệu em thương nhớ bạn nhiều
+Ground truth: mong anh hãy hiểu cho em em thương nhớ và yêu anh nhiều
+---------------
+Predict text: lên các cuộc hẹn phong bắt bà thực hiện phóng vấn
+Ground truth: lên các cuộc hẹn phỏng vấn và thực hiện phỏng vấn
+---------------
+Predict text: phía ở khi cạnh này thì đúng đúng là mất mới lao dụng
+Ground truth: xét ở khía cạnh này thì đúng là mất bò mới lo làm chuồng
+---------------
+Predict text: tuy nhiên tôi nghĩ cậu ta với trách vô
+Ground truth: tuy nhiên tôi nghĩ cậu ta xứng đáng với chức vô địch
+---------------
+Predict text: những biến này thường thấy rõ khi dương vật gương
+Ground truth: những biến dạng này thường thấy rõ khi dương vật cương
+---------------
+Predict text: giỏi thì bắt mình để ra không nuôi thì anh nuôi
+Ground truth: giỏi gì bác mình đẻ ra không nuôi thì ai nuôi
+---------------
+Predict text: phụ sa bò đập vườn cha sống làng chuột
+Ground truth: phù sa bồi đắp ruộng vườn cho xóm làng trù phú
+---------------
+Predict text: ông nói chung tôi hi có những viên đất làm
+Ground truth: ông nói chúng tôi hi vọng sẽ có những tin tức tốt lành
+---------------
+Predict text: về viên pháp vào học là sinh viên phải đóng học phí
+Ground truth: về nguyên tắc vào học là sinh viên phải đóng học phí
+---------------
+Predict text: để nhận ăn và mong khủng dần thì bị đại lưu
+Ground truth: để những khó khăn và mâu thuẫn dần dần sẽ bị đẩy lui
+---------------
+Predict text: chống mặt còn thể do gia trạng có loạn tiên nặng đây ra
+Ground truth: chóng mặt còn có thể do tình trạng rối loạn nhịp tim nặng gây ra
+---------------
+Predict text: trăm nắng hạng thì trường vẫn hành như một cuộc máy bầu
+Ground truth: trong ngắn hạn thị trường vận hành như một cỗ máy bầu cử
+---------------
+Predict text: dương trình học thanh niên trò của nhập bạn
+Ground truth: chương trình học bổng thanh niên châu á của nhật bản
+---------------
+Predict text: nhưng rồi cái tin với bà con cứ năm yêu không giúp ra đủ
+Ground truth: nhưng rồi cái tình với bà con cứ nắm níu không dứt ra được
+---------------
+Predict text: số đông phải tham gia họ việt làm tăng kể qua các năm
+Ground truth: số đơn vị tham gia hội chợ việc làm tăng đáng kể qua các năm
+---------------
+Predict text: trang viết của họ hơn hàng thời trị của tôi
+Ground truth: trang viết của họ hơn hẳn thời tuổi trẻ của tôi
+---------------
+Predict text: khuyến điện lớn của chúng ta là chưa có doanh chủ thực sự
+Ground truth: khuyết điểm lớn của chúng ta là chưa có dân chủ thật sự
+---------------
+Predict text: em có suy nghĩ than về việc tham dự hồi chợ khoa học không
+Ground truth: em có suy nghĩ thêm về việc tham dự hội chợ khoa học không
+---------------
+Predict text: họ chỉ thích những môn gì mạnh và lực và hiếm ra tiền thôi
+Ground truth: họ chỉ thích những môn gì mạnh bạo bạo lực và kiếm ra tiền thôi
+---------------
+Predict text: những người chị ấy tận đá thuê phá lên áo
+Ground truth: những người trẻ ấy thật đáng phê phán đáng lên án
+---------------
+Predict text: ông thường thường bán kỹ luật có thường thường bạn hành vào tân
+Ground truth: thông thường án kỷ luật nếu có thường ban hành vào cuối tuần
+---------------
+Predict text: điều là tôi vẫn không từ quá ý định trở thành trung sĩ
+Ground truth: điều lạ là tôi vẫn không từ bỏ ý định trở thành tu sĩ
+---------------
+Predict text: các vui định của thấp luật không thể được ban hành theo đăng
+Ground truth: các qui định của pháp luật không thể được ban hành theo kiểu đánh lén
+---------------
+Predict text: ngăn qua quá đã là lần thứ ba nhà đấy
+Ground truth: nhanh quá đã là lần thứ ba xa nhà rồi đấy
+---------------
+Predict text: nửa đất phòng nguyên cái dưỡng công ty tiếp thị đầu tư
+Ground truth: đỗ đức thuần nguyên kế toán trưởng công ty tiếp thị đầu tư
+---------------
+Predict text: người anh sau đó được hầu say trên này nhưng không tiến hành
+Ground truth: người anh sau đó được phép thầu xây kênh này nhưng không tiến hành
+---------------
+Predict text: nói cách khác trái được giao khá là cái mắt của viên
+Ground truth: nói cách khác cái được của châu á là cái mất của châu phi
+---------------
+Predict text: mắt tượng nhiên hoa lên trí một cái liên vật mạnh xuống
+Ground truth: mắt tự nhiên hoa lên trí chụp một cái ly quật mạnh xuống sàn
+---------------
+Predict text: từ đại ông càng thông cảm rằng quần nguyễn thế
+Ground truth: từ đấy ông càng thông cảm sâu sắc tâm trạng của nguyễn thiếp
+---------------
+Predict text: em hãy tìm cách biết còn đề bày với hiện
+Ground truth: em hãy tìm cách tiếp cận để bày tỏ với mẹ
+---------------
+Predict text: nước đó nàng chạy hi kinh thuận hết nhiều lần không nay
+Ground truth: lúc đó nạn kẹt xe chắc sẽ kinh khủng gấp nhiều lần hôm nay
+---------------
+Predict text: gọi các tập thuế ăn nên đợi cách tiếp
+Ground truth: vợ lỡ có tật thế anh nên thay đổi cách tiếp cận
+---------------
+Predict text: đây được xem là vai diễn thành công nhất khu đăng
+Ground truth: đây được xem là vai diễn thành công nhất của vương từ trước đến nay
+---------------
+Predict text: nhưng nó chị nói đang gọi không thôi thì thật sự chưa đủ về yếu tư
+Ground truth: nhưng nếu chỉ nói cái giỏi không thôi thì thật chưa đủ về chú tư
+---------------
+Predict text: tất hơn với vấn đề liên quan đến hiệu và
+Ground truth: tích cực hơn với vấn đề liên quan đến kiều bào
+---------------
+Predict text: để rồi chung ta không khác trong vòng lưng hồi dân
+Ground truth: để rồi chúng ta khao khát mãi trong vòng luân hồi nhân gian
+---------------
+Predict text: văn đề đại sinh từ cải câu hỏi dân cô ấy
+Ground truth: vấn đề nảy sinh từ cái câu hỏi dinh cu ấy
+---------------
+Predict text: chị nên đi khám bắt sĩ về chồng phương pháp người thay quả
+Ground truth: chị nên đi khám bác sĩ và chọn phương pháp ngừa thai hiệu quả
+---------------
+Predict text: nào một cuộc khiến trăm tham dụng vẫn chưa và đau
+Ground truth: nợ một cuộc chiến chống tham nhũng vẫn chưa vào đâu
+---------------

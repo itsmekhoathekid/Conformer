@@ -208,6 +208,7 @@ class ResidualConnection(nn.Module):
 class FeedForwardModule(nn.Module):
     def __init__(self, d_model, d_ff, dropout, activation):
         super(FeedForwardModule, self).__init__()
+        self.ln = LayerNormalization(d_model)
         self.linear1 = Linear(d_model, d_ff)
         self.linear2 = Linear(d_ff, d_model)
         self.dropout = nn.Dropout(dropout)
@@ -219,7 +220,7 @@ class FeedForwardModule(nn.Module):
             raise ValueError("Only relu and swish are supported.")
 
     def forward(self, x):
-        return self.linear2(self.dropout(self.activation(self.linear1(x))))
+        return self.linear2(self.dropout(self.activation(self.linear1(self.ln(x)))))
 
 
 class ConvolutionalModule(nn.Module):
