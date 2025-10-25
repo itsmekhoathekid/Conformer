@@ -3,10 +3,10 @@
         "epochs" : 100,
         "batch_size" : 2,
         "save_path" : "/home/anhkhoa/Conformer/saves",
-        "train_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/train.json",
-        "dev_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/dev.json",
-        "test_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/dev.json",
-        "vocab_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/vocab.json",
+        "train_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/train_w2i.json",
+        "dev_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/test_w2i.json",
+        "test_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/test_w2i.json",
+        "vocab_path" : "/home/anhkhoa/transformer_transducer_speeQ/data/vocab_w2i.json",
         "log_file" : "/home/anhkhoa/Conformer/logs/conformer.log",
         "reload" : false,
         "max_grad_norm" : 200
@@ -36,7 +36,18 @@
         "num_encoder_layers" : 1,
         "output_dim" : 320,
         "in_channels" : 1,
-        "out_channels" : 32
+        "out_channels" : 32,
+        "subsampling_type" : "conv_frontend",
+        "subsampling" : { 
+            "num_blocks" : 3,
+            "num_layers_per_block" : 2,
+            "out_channels" : [8, 16, 32],
+            "kernel_sizes" : [3 ,3, 3],
+            "strides" : [1, 2, 2],
+            "residuals" : [true, true, true],
+            "dropout" : 0.1,
+            "input_projection" : 640
+        }
     },
 
 

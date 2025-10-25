@@ -472,4 +472,136 @@ class MultiConvolutionalGatingMLP(torch.nn.Module):
             out = xs_pad
         return out
 
-    
+def get_mask_from_lens(lengths, max_len: int):
+    """Creates a mask tensor from lengths tensor.
+
+    Args:
+        lengths (Tensor): The lengths of the original tensors of shape [B].
+
+        max_len (int): the maximum lengths.
+
+    Returns:
+        Tensor: The mask of shape [B, max_len] and True whenever the index in the data portion.
+    """
+    indices = torch.arange(max_len).to(lengths.device)
+    indices = indices.expand(len(lengths), max_len)
+    return indices < lengths.unsqueeze(dim=1)
+
+from typing import List, Optional, Type, Callable
+
+class ConvBlock(nn.Module):
+    def __init__(
+        self,
+        in_channels: int,
+        out_channels: int,
+        num_layers: int,
+        kernel_size: int = 3,
+        stride: int = 1,
+        dilation: int = 1,
+        residual: bool = False,
+        conv_module: Type[nn.Module] = nn.Conv2d,
+        activation: Callable = nn.LeakyReLU,  # 👉 Dùng LeakyReLU
+        norm: Optional[Type[nn.Module]] = nn.BatchNorm2d,
+        dropout: float = 0.1
+    ):
+        super().__init__()
+        layers = []
+        for i in range(num_layers):
+            conv_stride = stride if i == num_layers - 1 else 1
+            conv = conv_module(
+                in_channels=in_channels if i == 0 else out_channels,
+                out_channels=out_channels,
+                kernel_size=kernel_size,
+                stride=conv_stride,
+                dilation=dilation,
+                padding=(kernel_size // 2)
+            )
+            layers.append(conv)
+            if norm:
+                layers.append(norm(out_channels))  # Gọi instance
+            layers.append(activation())
+            layers.append(nn.Dropout(dropout))
+
+        self.main = nn.Sequential(*layers)
+        self.residual = residual
+
+        if residual and in_channels != out_channels:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(in_channels, out_channels, kernel_size=1, stride=stride),
+                norm(out_channels) if norm else nn.Identity(),
+                nn.Dropout(dropout),
+            )
+        elif residual:
+            self.shortcut = nn.Identity()
+        else:
+            self.shortcut = None
+
+    def forward(self, x, mask):
+        B, C, T, F = x.shape
+        residual_input = x  
+
+        for layer in self.main:
+            x = layer(x)
+            if isinstance(layer, nn.Conv2d):
+                k = layer.kernel_size[0]
+                s = layer.stride[0]
+                d = layer.dilation[0]
+                p = layer.padding[0]
+                out_T = (T + 2 * p - d * (k - 1) - 1) // s + 1
+                pad_len = T - mask.sum(dim=1)
+                data_len = mask.sum(dim=1)
+                new_len = calc_data_len(
+                    result_len=out_T,
+                    pad_len=pad_len,
+                    data_len=data_len,
+                    kernel_size=k,
+                    stride=s,
+                )
+                mask = get_mask_from_lens(new_len, out_T)
+                T = out_T
+
+        if self.residual:
+            shortcut = self.shortcut(residual_input)  # 👉 fix chỗ này
+            x = x + shortcut
+
+        return x, mask
+
+
+class ConvolutionFrontEnd(nn.Module):
+    def __init__(
+        self,
+        in_channels: int,
+        num_blocks: int,
+        num_layers_per_block: int,
+        out_channels: List[int],
+        kernel_sizes: List[int],
+        strides: List[int],
+        residuals: List[bool],
+        activation: Callable = nn.LeakyReLU, 
+        norm: Optional[Callable] = nn.BatchNorm2d, 
+        dropout: float = 0.1,
+    ):
+        super().__init__()
+        blocks = []
+
+        for i in range(num_blocks):
+            block = ConvBlock(
+                in_channels=in_channels,
+                out_channels=out_channels[i],
+                num_layers=num_layers_per_block,
+                kernel_size=kernel_sizes[i],
+                stride=strides[i],
+                residual=residuals[i],
+                activation=activation,
+                norm=norm,
+                dropout=dropout
+            )
+            blocks.append(block)
+            in_channels = out_channels[i]
+
+        self.model = nn.ModuleList(blocks)
+
+    def forward(self, x, mask):
+        for i, block in enumerate(self.model):
+            x, mask = block(x, mask)
+        return x, mask
